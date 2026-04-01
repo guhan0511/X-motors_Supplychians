@@ -1,0 +1,18 @@
+{
+  "name": "x-motors-supply-chain",
+  "version": "1.0.0",
+  "description": "X-Motors Supply Chain Backend — lightweight JSON-file storage, ready for Dingdanbao/WhatsApp extension",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
