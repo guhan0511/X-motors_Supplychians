@@ -21,7 +21,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14px;line-height:1.5;min-height:100vh;overflow-x:hidden}
- 
+
 /* ── LOGIN ── */
 #login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
 .login-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:36px;width:460px;max-width:100%}
@@ -46,7 +46,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14
 .lang-row{display:flex;gap:6px;margin-bottom:14px}
 .lang-btn{padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:var(--bg3);color:var(--text2);font-size:11px;cursor:pointer}
 .lang-btn.active{border-color:var(--amber);color:var(--amber);background:var(--amber3)}
- 
+
 /* ── LAYOUT ── */
 #app{display:none;height:100vh;overflow:hidden;flex-direction:column}
 .app-row{display:flex;flex:1;overflow:hidden}
@@ -67,7 +67,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14
 .u-name{font-size:12px;font-weight:600}.u-role{font-size:10px;color:var(--text2)}
 .logout-btn{background:none;border:none;color:var(--text3);cursor:pointer;font-size:11px;margin-top:6px;width:100%;text-align:left;padding:2px 0;font-family:var(--font)}
 .logout-btn:hover{color:var(--red)}
- 
+
 /* ── TOPBAR ── */
 .topbar{padding:12px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:var(--bg2);position:sticky;top:0;z-index:10;gap:10px}
 .page-title{font-size:16px;font-weight:700;white-space:nowrap}
@@ -79,7 +79,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 .menu-toggle{display:none;background:none;border:none;color:var(--text2);font-size:18px;cursor:pointer}
 @media(max-width:760px){.menu-toggle{display:flex}.sidebar{position:fixed;left:-228px;z-index:100;height:100vh}.sidebar.open{left:0}}
- 
+
 /* ── BADGES ── */
 .badge{display:inline-flex;align-items:center;padding:2px 7px;border-radius:20px;font-size:11px;font-weight:600}
 .b-amber{background:var(--amber3);color:var(--amber);border:1px solid rgba(240,165,0,.2)}
@@ -90,7 +90,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14
 .b-purple{background:var(--purple2);color:var(--purple);border:1px solid rgba(167,139,250,.2)}
 .b-teal{background:var(--teal2);color:var(--teal);border:1px solid rgba(6,182,212,.2)}
 .b-yellow{background:var(--yellow2);color:var(--yellow);border:1px solid rgba(227,179,65,.2)}
- 
+
 /* ── CONTENT ── */
 .content{padding:20px}
 .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
@@ -102,7 +102,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14
 .amber .kpi-val{color:var(--amber)}.blue .kpi-val{color:var(--blue)}
 .green .kpi-val{color:var(--green)}.red .kpi-val{color:var(--red)}
 .purple .kpi-val{color:var(--purple)}.teal .kpi-val{color:var(--teal)}
- 
+
 /* ── CARDS ── */
 .card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);margin-bottom:16px}
 .card-hd{padding:12px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
@@ -111,7 +111,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:14
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:16px}
 @media(max-width:760px){.two-col,.three-col{grid-template-columns:1fr}.kpi-grid{grid-template-columns:1fr 1fr}}
- 
+
 /* ── TABLE ── */
 .tbl-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse}
@@ -119,7 +119,7 @@ th{padding:8px 11px;text-align:left;font-size:10px;color:var(--text2);text-trans
 td{padding:8px 11px;border-bottom:1px solid var(--border);font-size:13px;vertical-align:middle}
 tr:last-child td{border-bottom:none}
 tr:hover td{background:rgba(255,255,255,.02)}
- 
+
 /* ── ALERTS ── */
 .alert{padding:10px 14px;border-radius:var(--r);margin-bottom:12px;border:1px solid;font-size:12px;line-height:1.6}
 .alert-warn{background:var(--yellow2);border-color:rgba(227,179,65,.2);color:var(--yellow)}
@@ -128,24 +128,24 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .alert-teal{background:var(--teal2);border-color:rgba(6,182,212,.2);color:var(--teal)}
 .alert-purple{background:var(--purple2);border-color:rgba(167,139,250,.2);color:var(--purple)}
 .alert-red{background:var(--red2);border-color:rgba(248,81,73,.2);color:var(--red)}
- 
+
 /* ── PAGES ── */
 .page{display:none}.page.active{display:block}
 .locked{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:360px;gap:10px;color:var(--text2);text-align:center}
- 
+
 /* ── ORDER ITEMS ── */
 .order-item{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:11px 13px;margin-bottom:7px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
 .order-meta{font-size:11px;color:var(--text2);margin-top:3px}
- 
+
 /* ── TABS ── */
 .tabs-bar{display:flex;gap:2px;background:var(--bg3);padding:3px;border-radius:var(--r);margin-bottom:16px;overflow-x:auto}
 .tab-btn{padding:6px 12px;border-radius:6px;cursor:pointer;font-size:12px;color:var(--text2);transition:.12s;white-space:nowrap;flex-shrink:0}
 .tab-btn:hover{color:var(--text)}.tab-btn.active{background:var(--bg2);color:var(--text);font-weight:600}
- 
+
 /* ── CHARTS ── */
 .chart-wrap{position:relative;width:100%}
 .h200{height:200px}.h240{height:240px}.h280{height:280px}.h320{height:320px}.h380{height:380px}
- 
+
 /* ── FORM ── */
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
 .form-g{margin-bottom:12px}
@@ -154,14 +154,14 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .form-g input:focus,.form-g select:focus,.form-g textarea:focus{border-color:var(--amber)}
 .form-g textarea{min-height:70px}
 @media(max-width:760px){.form-row{grid-template-columns:1fr}}
- 
+
 /* ── STATUS DOTS ── */
 .sdot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:5px;flex-shrink:0}
 .s-ok{color:var(--green)}.s-ok .sdot{background:var(--green)}
 .s-warn{color:var(--yellow)}.s-warn .sdot{background:var(--yellow)}
 .s-low{color:var(--red)}.s-low .sdot{background:var(--red)}
 .s-blue{color:var(--blue)}.s-blue .sdot{background:var(--blue)}
- 
+
 /* ── LOGISTICS ── */
 .ship-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r2);margin-bottom:10px;overflow:hidden;cursor:pointer;transition:.15s}
 .ship-card:hover{border-color:var(--border2)}
@@ -192,18 +192,18 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .ship-item-row{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--text2);padding:4px 0;border-bottom:1px solid var(--border)}
 .ship-item-row:last-child{border-bottom:none}
 .ai-sug{background:var(--purple2);border:1px solid rgba(167,139,250,.2);border-radius:var(--r);padding:9px 12px;margin-top:8px;font-size:12px;color:var(--purple);line-height:1.6}
- 
+
 /* ── AI FORECAST ── */
 .forecast-legend{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--text2)}
 .leg-item{display:flex;align-items:center;gap:5px}
 .leg-line{width:22px;height:3px;border-radius:2px}
- 
+
 /* ── PRODUCT FORECAST TABLE ── */
 .trend-badge{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:600;padding:2px 6px;border-radius:4px}
 .trend-up{background:rgba(63,185,80,.15);color:var(--green)}
 .trend-down{background:rgba(248,81,73,.15);color:var(--red)}
 .trend-flat{background:var(--bg3);color:var(--text2)}
- 
+
 /* ── BUSINESS RECOMMENDATIONS ── */
 .rec-card{background:var(--bg3);border-left:4px solid;border-radius:0 var(--r) var(--r) 0;padding:12px 14px;margin-bottom:10px}
 .rec-critical{border-color:var(--red)}.rec-high{border-color:var(--yellow)}.rec-medium{border-color:var(--blue)}.rec-info{border-color:var(--teal)}
@@ -212,7 +212,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .rec-body{font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:8px}
 .rec-action{font-size:12px;color:var(--text);background:var(--bg4);border-radius:var(--r);padding:6px 10px;line-height:1.6}
 .rec-action::before{content:'→ ';color:var(--amber);font-weight:700}
- 
+
 /* ── INVENTORY STATUS ── */
 .inv-status-row{display:flex;gap:4px;flex-wrap:wrap}
 .inv-tag{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600}
@@ -220,7 +220,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .inv-out{background:rgba(30,144,255,.15);color:var(--blue)}
 .inv-pending-in{background:rgba(6,182,212,.15);color:var(--teal)}
 .inv-pending-out{background:rgba(227,179,65,.15);color:var(--yellow)}
- 
+
 /* ── SYNC WINDOW ── */
 .sync-bar{display:flex;align-items:center;gap:12px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:12px 16px;margin-bottom:16px;flex-wrap:wrap}
 .sbi{display:flex;align-items:center;gap:8px;padding-right:14px;border-right:1px solid var(--border)}
@@ -235,92 +235,92 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .incoming-item.flash{border-color:var(--teal);animation:newfl .6s ease-out}
 @keyframes newfl{0%{background:rgba(6,182,212,.12)}100%{background:var(--bg3)}}
 .sync-log-area{font-size:11px;font-family:monospace;color:var(--text2);line-height:1.8;max-height:150px;overflow-y:auto}
- 
+
 /* ── FRANCHISE CHIPS ── */
 .franchise-chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:16px}
 .fc{background:var(--bg3);border:1.5px solid var(--border);border-radius:var(--r);padding:10px;cursor:pointer;transition:.12s}
 .fc:hover,.fc.sel{border-color:var(--blue);background:var(--blue3)}
 .fc-name{font-size:12px;font-weight:600;margin-bottom:2px}.fc-sales{font-size:11px;color:var(--text2)}
- 
+
 /* ── CLEARANCE ── */
 .clear-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:11px 13px;margin-bottom:8px;display:flex;align-items:flex-start;gap:10px}
 .clear-pct{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
- 
+
 /* ── OPERATIONS ── */
 .ops-stat{background:var(--bg3);border-radius:var(--r);padding:12px;text-align:center}
 .ops-stat-val{font-size:22px;font-weight:700;margin-bottom:2px}
 .ops-stat-lbl{font-size:11px;color:var(--text2)}
- 
-/* ── TARGET PROGRESS BAR ── */
-.target-wrap{margin:10px 0}
-.target-hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
-.target-title{font-size:10px;color:var(--text2);font-weight:600;text-transform:uppercase;letter-spacing:.6px}
-.target-pct{font-size:13px;font-weight:700}
-.target-bar{background:var(--bg4);border-radius:6px;height:7px;overflow:hidden}
-.target-fill{height:100%;border-radius:6px;transition:width .6s ease}
-.target-sub{font-size:10px;color:var(--text2);margin-top:3px;display:flex;justify-content:space-between}
-.target-over{color:var(--green)}.target-warn{color:var(--yellow)}.target-low{color:var(--red)}
-.target-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
-@media(max-width:760px){.target-grid{grid-template-columns:1fr}}
- 
-/* ── INVOICE ── */
-.inv-row-overdue td{background:rgba(248,81,73,.04)}
-.inv-row-due3 td{background:rgba(240,165,0,.04)}
-.inv-days-ok{color:var(--green)}.inv-days-warn{color:var(--yellow)}.inv-days-over{color:var(--red);font-weight:700}
- 
-/* ── MODAL ── */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:300;align-items:center;justify-content:center;padding:20px}
-.modal-overlay.open{display:flex}
-.modal-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);width:520px;max-width:100%;max-height:92vh;overflow-y:auto}
-.modal-hd{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:var(--bg2);z-index:1}
-.modal-title{font-size:15px;font-weight:700}
-.modal-close{background:none;border:none;color:var(--text2);font-size:20px;cursor:pointer;line-height:1}
-.modal-close:hover{color:var(--text)}
-.modal-bd{padding:18px}
- 
-/* ── FRANCHISE DRILL-DOWN ── */
-.fr-chip{background:var(--bg3);border:1.5px solid var(--border);border-radius:var(--r);padding:10px;cursor:pointer;transition:.12s}
-.fr-chip:hover{border-color:var(--blue);background:var(--blue3)}
-.fr-chip.sel{border-color:var(--amber);background:var(--amber3)}
-.fr-chip-name{font-size:12px;font-weight:600;margin-bottom:2px}
-.fr-chip-sales{font-size:11px;color:var(--text2)}
-.fr-detail{background:var(--bg2);border:1px solid var(--amber);border-radius:var(--r2);padding:0;margin-bottom:16px;overflow:hidden;animation:fadeIn .2s ease}
-@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
-.fr-detail-hd{padding:12px 16px;background:var(--amber3);border-bottom:1px solid rgba(240,165,0,.2);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.fr-detail-name{font-size:15px;font-weight:700;color:var(--amber)}
-.fr-detail-bd{padding:16px}
-.fr-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
-@media(max-width:760px){.fr-stats-row{grid-template-columns:1fr 1fr}}
-.fr-stat{background:var(--bg3);border-radius:var(--r);padding:10px;text-align:center}
-.fr-stat-val{font-size:18px;font-weight:700;margin-bottom:2px}
-.fr-stat-lbl{font-size:10px;color:var(--text2)}
- 
-/* ── BACKEND STATUS ── */
-.be-pill{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:20px;font-size:10px;cursor:default}
-.be-online{background:rgba(63,185,80,.1);color:var(--green);border:1px solid rgba(63,185,80,.2)}
-.be-offline{background:var(--bg3);color:var(--text3);border:1px solid var(--border)}
 </style>
 </head>
 <body>
-          <div class="nav-item" style="color:var(--teal)" onclick="nav('sync')" id="nav-sync">
+
+<!-- ════ LOGIN ════ -->
+<div id="login-screen">
+<div class="login-box">
+  <div class="brand">
+    <div class="brand-icon">X</div>
+    <div><div class="brand-name">X-MOTORS</div><div class="brand-sub">Supply Chain · Indonesia</div></div>
+  </div>
+  <div class="lang-row">
+    <div class="lang-btn active" onclick="setLang('zh',this)">中文</div>
+    <div class="lang-btn" onclick="setLang('en',this)">English</div>
+    <div class="lang-btn" onclick="setLang('id',this)">Bahasa ID</div>
+  </div>
+  <div style="font-size:14px;font-weight:600;margin-bottom:3px" data-i18n="login.title">登录系统</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:14px" data-i18n="login.sub">选择角色进入对应功能区</div>
+  <div class="role-grid">
+    <div class="role-card" onclick="selRole('admin')" id="role-admin"><div class="role-icon">⚙️</div><div class="role-label" data-i18n="role.admin">供应链管理</div><div class="role-desc" data-i18n="role.admin.desc">全部权限 · 库存 · 采购</div></div>
+    <div class="role-card" onclick="selRole('ops')" id="role-ops"><div class="role-icon">📊</div><div class="role-label" data-i18n="role.ops">运营分析</div><div class="role-desc" data-i18n="role.ops.desc">销售 · 业务建议 · 运营</div></div>
+    <div class="role-card" onclick="selRole('marketing')" id="role-marketing"><div class="role-icon">📈</div><div class="role-label" data-i18n="role.mkt">市场</div><div class="role-desc" data-i18n="role.mkt.desc">销售趋势 · AI预测 · 绩效</div></div>
+    <div class="role-card" onclick="selRole('franchise')" id="role-franchise"><div class="role-icon">🏪</div><div class="role-label" data-i18n="role.franchise">加盟商</div><div class="role-desc" data-i18n="role.franchise.desc">本店数据 · 采购申请</div></div>
+  </div>
+  <div id="fr-select-wrap" style="display:none">
+    <label class="f-label" data-i18n="login.store">选择门店</label>
+    <select class="f-select" id="fr-picker">
+      <option value="">-- 请选择 / Select --</option>
+      <option>Pit Stop 3</option><option>Subur Makmur Ban</option><option>Bengkel Pegasus</option>
+      <option>Autocraft</option><option>Autones</option><option>ADS Prima</option>
+      <option>Auto Mekanika</option><option>Bengkel Multi Variasi</option><option>Euro Galleria</option>
+      <option>Drivewell</option><option>CV Sun</option><option>Sumber Timur</option>
+      <option>Honda Auto Duren Sawit</option><option>Lavender Car Solution</option>
+    </select>
+  </div>
+  <div class="form-g"><label class="f-label" data-i18n="login.pw">密码</label><input type="password" class="f-input" placeholder="••••••" id="pw-input"/></div>
+  <button class="btn btn-primary" onclick="doLogin()" data-i18n="login.btn">进入看板 →</button>
+</div>
+</div>
+
+<!-- ════ APP ════ -->
+<div id="app" style="display:flex;flex-direction:column">
+  <div class="app-row">
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+      <div class="sb-brand">
+        <div class="brand-icon" style="width:30px;height:30px;font-size:13px">X</div>
+        <div><div style="font-weight:700;font-size:13px">X-MOTORS</div><div style="font-size:9px;color:var(--text2)">Supply Chain</div></div>
+      </div>
+
+      <div class="nav-sec" id="ns-sync">
+        <div class="nav-lbl" style="color:var(--teal)" data-i18n="nav.sync.sec">订单宝</div>
+        <div class="nav-item" style="color:var(--teal)" onclick="nav('sync')" id="nav-sync">
           <div class="nav-dot" style="opacity:1;background:var(--teal)"></div>
           <span data-i18n="nav.sync">实时同步窗口</span>
           <span class="badge b-teal nav-badge" id="sync-nav-badge" style="display:none;font-size:10px"></span>
         </div>
       </div>
- 
+
       <div class="nav-sec" id="ns-overview">
         <div class="nav-lbl" data-i18n="nav.overview">概览</div>
         <div class="nav-item active" onclick="nav('dashboard')" id="nav-dashboard"><div class="nav-dot"></div><span data-i18n="nav.dashboard">数据总览</span></div>
       </div>
- 
+
       <div class="nav-sec" id="ns-supply">
         <div class="nav-lbl" data-i18n="nav.supply">供应链</div>
         <div class="nav-item" onclick="nav('inventory')" id="nav-inventory"><div class="nav-dot"></div><span data-i18n="nav.inventory">库存管理</span></div>
         <div class="nav-item" onclick="nav('orders')" id="nav-orders"><div class="nav-dot"></div><span data-i18n="nav.orders">采购申请</span><span class="badge b-amber nav-badge" id="order-badge" style="font-size:10px"></span></div>
         <div class="nav-item" onclick="nav('logistics')" id="nav-logistics"><div class="nav-dot"></div><span data-i18n="nav.logistics">物流追踪</span><span class="badge b-red nav-badge" id="exc-badge" style="font-size:10px;display:none">1</span></div>
       </div>
- 
+
       <div class="nav-sec" id="ns-analysis">
         <div class="nav-lbl" data-i18n="nav.analysis">分析</div>
         <div class="nav-item" onclick="nav('sales')" id="nav-sales"><div class="nav-dot"></div><span data-i18n="nav.sales">销售总览</span></div>
@@ -336,13 +336,13 @@ tr:hover td{background:rgba(255,255,255,.02)}
         </div>
         <div class="nav-item" onclick="nav('operations')" id="nav-operations"><div class="nav-dot"></div><span data-i18n="nav.ops">运营分析</span></div>
       </div>
- 
+
       <div class="nav-sec" id="ns-my">
         <div class="nav-lbl" data-i18n="nav.mystore">我的门店</div>
         <div class="nav-item" onclick="nav('my-sales')" id="nav-my-sales"><div class="nav-dot"></div><span data-i18n="nav.mysales">我的销售</span></div>
         <div class="nav-item" onclick="nav('my-orders')" id="nav-my-orders"><div class="nav-dot"></div><span data-i18n="nav.myorders">提交采购申请</span></div>
       </div>
- 
+
       <div class="sb-footer">
         <div class="user-chip">
           <div class="u-avatar" id="u-avatar">?</div>
@@ -351,7 +351,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
         <button class="logout-btn" onclick="doLogout()">← <span data-i18n="logout">退出登录</span></button>
       </div>
     </div><!-- /sidebar -->
- 
+
     <!-- MAIN -->
     <div class="main">
       <div class="topbar">
@@ -367,49 +367,141 @@ tr:hover td{background:rgba(255,255,255,.02)}
           <div class="lang-row" style="margin:0">
             <div class="lang-btn active" onclick="setLang('zh',this)">中</div>
             <div class="lang-btn" onclick="setLang('en',this)">EN</div>
-        <div class="nav-item" onclick="nav('logistics')" id="nav-logistics"><div class="nav-dot"></div><span data-i18n="nav.logistics">物流追踪</span><span class="badge b-red nav-badge" id="exc-badge" style="font-size:10px;display:none">1</span></div>
-      </div>
- 
-      <div class="nav-sec" id="ns-invoice">
-        <div class="nav-lbl" style="color:var(--amber)">账务</div>
-        <div class="nav-item" style="color:var(--amber)" onclick="nav('invoices')" id="nav-invoices">
-          <div class="nav-dot" style="opacity:1;background:var(--amber)"></div>
-          <span>发票管理</span>
-          <span class="badge b-amber nav-badge" id="inv-overdue-badge" style="display:none;font-size:10px"></span>
+            <div class="lang-btn" onclick="setLang('id',this)">ID</div>
+          </div>
+          <div style="font-size:10px;color:var(--text3)" id="clock"></div>
         </div>
       </div>
- 
-      <div class="nav-sec" id="ns-analysis">
-        <div class="nav-lbl" data-i18n="nav.analysis">分析</div>
-        <div class="nav-item" onclick="nav('sales')" id="nav-sales"><div class="nav-dot"></div><span data-i18n="nav.sales">销售总览</span></div>
-    <div class="sbi"><div><div class="sbi-lbl">待确认</div><div class="sbi-val" style="color:var(--amber)" id="queue-cnt">0 条</div></div></div>
-    <div class="sbi">
-      <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <button class="btn btn-teal btn-sm" onclick="startDemo()">▶ 模拟接收</button>
-        <button class="btn btn-success btn-sm" onclick="confirmAll()">全部确认</button>
-      </div>
+
+      <div class="content">
+
+<!-- ══ PAGE: SYNC ══ -->
+<div class="page" id="page-sync">
+  <div class="alert alert-teal" id="sync-alert" style="display:none"></div>
+
+  <!-- ★ 订单宝主入口 — 置顶醒目 -->
+  <div style="background:linear-gradient(135deg,var(--teal2),rgba(30,144,255,.08));border:1px solid rgba(6,182,212,.3);border-radius:var(--r2);padding:16px 18px;margin-bottom:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+    <div style="font-size:28px">📱</div>
+    <div style="flex:1;min-width:180px">
+      <div style="font-size:14px;font-weight:700;color:var(--teal);margin-bottom:2px">订单宝 · 快速录入</div>
+      <div style="font-size:12px;color:var(--text2)">加盟商在 WhatsApp 发来订单？在这里录入，一键进入采购流程</div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn btn-teal btn-sm" onclick="showQuickEntry()" id="quick-entry-btn">＋ 录入新订单</button>
+      <button class="btn btn-ghost btn-sm" onclick="confirmAll()">✓ 全部确认入库</button>
+      <button class="btn btn-ghost btn-sm" onclick="startDemo()" style="font-size:11px;color:var(--text3)">演示模式</button>
     </div>
   </div>
+
+  <!-- ★ 快速录入面板 (默认展开) -->
+  <div class="card" id="quick-entry-panel" style="margin-bottom:14px">
+    <div class="card-hd" style="background:rgba(6,182,212,.06)">
+      <div class="card-title" style="color:var(--teal)">📝 录入订单</div>
+      <div style="font-size:11px;color:var(--text3)">收到 WhatsApp 订单后，在这里快速录入</div>
+    </div>
+    <div class="card-bd">
+      <!-- 门店 + 产品 同行 -->
+      <div class="form-row" style="margin-bottom:10px">
+        <div class="form-g" style="margin-bottom:0">
+          <label>🏪 门店（发单人）</label>
+          <select id="qe-store">
+            <option value="">-- 选择门店 --</option>
+            <option>Pit Stop 3</option><option>Subur Makmur Ban</option><option>Bengkel Pegasus</option>
+            <option>Autocraft</option><option>Autones</option><option>ADS Prima</option>
+            <option>Auto Mekanika</option><option>Bengkel Multi Variasi</option><option>Euro Galleria</option>
+            <option>Drivewell</option><option>CV Sun</option><option>Sumber Timur</option>
+            <option>Honda Auto Duren Sawit</option><option>Lavender Car Solution</option>
+          </select>
+        </div>
+        <div class="form-g" style="margin-bottom:0">
+          <label>📦 产品</label>
+          <select id="qe-product">
+            <option value="">-- 选择产品 --</option>
+            <optgroup label="变速箱油 ATF">
+              <option>MOBIL Dexron-VI ATF 1L</option>
+              <option>MOBIL CVTF Multi-Vehicle 1L</option>
+              <option>SHELL Spirax ATF 6 1L</option>
+              <option>MOTUL ATF VI 1L</option>
+            </optgroup>
+            <optgroup label="制动液 Brake Fluid">
+              <option>CASTROL DOT 3 - 500ml</option>
+              <option>CASTROL DOT 4 - 500ml</option>
+              <option>PRESTONE DOT 3 - 1000ml</option>
+            </optgroup>
+            <optgroup label="雨刷 Wiper">
+              <option>BOSCH Wiper BCA14</option>
+              <option>BOSCH Wiper BCA16</option>
+              <option>BOSCH Wiper BCA18</option>
+            </optgroup>
+            <optgroup label="电池 Battery">
+              <option>BOSCH Battery NS40ZL</option>
+              <option>BOSCH Battery 55D23L</option>
+            </optgroup>
+            <optgroup label="滤清器">
+              <option>BOSCH Oil Filter O1041</option>
+            </optgroup>
+            <option value="__other__">其他（在备注里写）</option>
+          </select>
+        </div>
+      </div>
+      <!-- 数量 + 金额 + 备注 同行 -->
+      <div style="display:grid;grid-template-columns:90px 1fr 1fr;gap:10px;margin-bottom:12px">
+        <div class="form-g" style="margin-bottom:0">
+          <label>🔢 数量</label>
+          <input type="number" id="qe-qty" min="1" placeholder="24" style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:7px 10px;color:var(--text);font-size:13px;outline:none;width:100%"/>
+        </div>
+        <div class="form-g" style="margin-bottom:0">
+          <label>💰 金额 Rp (可选)</label>
+          <input type="number" id="qe-amt" placeholder="2568000" style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:7px 10px;color:var(--text);font-size:13px;outline:none;width:100%"/>
+        </div>
+        <div class="form-g" style="margin-bottom:0">
+          <label>📋 备注 (可选)</label>
+          <input type="text" id="qe-note" placeholder="例：Honda CR-V, 急需" style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:7px 10px;color:var(--text);font-size:13px;outline:none;width:100%"/>
+        </div>
+      </div>
+      <!-- 原始 WA 消息（可选粘贴） -->
+      <div class="form-g" style="margin-bottom:12px">
+        <label style="display:flex;align-items:center;justify-content:space-between"><span>💬 粘贴 WhatsApp 原文（可选，自动解析）</span><button class="btn btn-ghost btn-sm" onclick="parseWAMessage()" style="font-size:11px">自动解析 →</button></label>
+        <textarea id="qe-raw" placeholder="直接把加盟商发的 WhatsApp 消息粘贴在这里，点「自动解析」自动填入上方字段&#10;例：minta CASTROL DOT3 24 botol urgent" style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:8px 10px;color:var(--text);font-size:12px;outline:none;width:100%;min-height:60px;resize:vertical;font-family:inherit;line-height:1.5"></textarea>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="btn btn-teal" style="flex:1" onclick="quickEntrySubmit()">＋ 加入待确认队列</button>
+        <button class="btn btn-ghost btn-sm" onclick="quickEntryClear()">清空</button>
+      </div>
+      <div id="qe-ok" class="alert alert-success" style="display:none;margin-top:8px">✅ 已加入队列，点上方「全部确认入库」完成录入</div>
+      <div id="qe-err" class="alert" style="display:none;margin-top:8px;background:var(--red2);border-color:rgba(248,81,73,.2);color:var(--red)"></div>
+    </div>
+  </div>
+
+  <!-- 状态栏 + 队列 -->
+  <div class="sync-bar" style="margin-bottom:12px">
+    <div class="sbi"><div class="sync-dot" id="sync-dot2" style="width:9px;height:9px"></div><div><div class="sbi-lbl">连接状态</div><div class="sbi-val" id="conn-txt">未连接</div></div></div>
+    <div class="sbi"><div><div class="sbi-lbl">最后同步</div><div class="sbi-val" id="last-sync">—</div></div></div>
+    <div class="sbi"><div><div class="sbi-lbl">今日已同步</div><div class="sbi-val" style="color:var(--teal)" id="sync-today">0 条</div></div></div>
+    <div class="sbi"><div><div class="sbi-lbl">待确认</div><div class="sbi-val" style="color:var(--amber)" id="queue-cnt">0 条</div></div></div>
+  </div>
+
   <div class="two-col" style="align-items:start">
     <div>
       <div class="card" style="margin-bottom:0">
         <div class="card-hd">
-          <div class="card-title" style="color:var(--teal)">📥 订单宝传入队列</div>
+          <div class="card-title" style="color:var(--teal)">📥 待确认队列</div>
           <div style="display:flex;gap:6px;align-items:center">
             <span class="badge b-teal" id="queue-badge">0 条</span>
+            <button class="btn btn-success btn-sm" onclick="confirmAll()">全部确认</button>
             <button class="btn btn-ghost btn-sm" onclick="clearQueue()">清空</button>
           </div>
         </div>
-        <div class="card-bd" id="incoming-queue" style="max-height:500px;overflow-y:auto">
+        <div class="card-bd" id="incoming-queue" style="max-height:460px;overflow-y:auto">
           <div style="text-align:center;color:var(--text3);padding:40px;font-size:12px">
-            <div style="font-size:28px;margin-bottom:8px">📡</div>等待订单宝数据传入<br>使用右侧导入或点击「模拟接收」
+            <div style="font-size:28px;margin-bottom:8px">📋</div>队列为空<br>用上方「录入新订单」添加，或点「演示模式」体验
           </div>
         </div>
       </div>
     </div>
     <div>
       <div class="card">
-        <div class="card-hd"><div class="card-title">导入方式</div></div>
+        <div class="card-hd"><div class="card-title">其他导入方式</div><span class="badge b-gray" style="font-size:10px">进阶</span></div>
         <div class="card-bd">
           <div class="src-tabs">
             <div class="src-tab active" onclick="switchSrc('csv',this)">粘贴CSV</div>
@@ -424,13 +516,13 @@ tr:hover td{background:rgba(255,255,255,.02)}
               <div class="tbl-wrap" style="border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
                 <table style="font-size:12px"><thead><tr><th>订单号</th><th>门店</th><th>产品</th><th>数量</th></tr></thead>
                 <tbody id="csv-tbody"></tbody></table>
-            <div class="lang-btn" onclick="setLang('en',this)">EN</div>
-            <div class="lang-btn" onclick="setLang('id',this)">ID</div>
-          </div>
-          <div class="be-pill be-offline" id="be-status-pill" title="Backend server status">⬤ 本地存储</div>
-          <div style="font-size:10px;color:var(--text3)" id="clock"></div>
-        </div>
-      </div>
+              </div>
+            </div>
+            <div style="display:flex;gap:6px;margin-top:8px">
+              <button class="btn btn-ghost btn-sm" onclick="parseCSV()">解析预览</button>
+              <button class="btn btn-teal btn-sm" onclick="importCSV()">导入队列</button>
+              <button class="btn btn-ghost btn-sm" onclick="document.getElementById('csv-input').value='';document.getElementById('csv-preview').style.display='none'">清空</button>
+            </div>
           </div>
           <div id="src-manual" style="display:none">
             <div class="form-row">
@@ -464,17 +556,72 @@ tr:hover td{background:rgba(255,255,255,.02)}
             <div id="manual-ok" class="alert alert-success" style="display:none;margin-top:8px">✅ 已加入队列</div>
           </div>
           <div id="src-webhook" style="display:none">
-            <div class="alert alert-info">💡 配置后，订单宝新订单自动推送至本看板，无需手动导入</div>
-            <div class="form-g"><label>Webhook接收地址</label><input type="text" placeholder="https://your-domain.com/api/webhook"/></div>
-            <div class="form-g"><label>验签密钥</label><input type="text" placeholder="从订单宝后台获取"/></div>
-            <div style="font-size:11px;color:var(--text2);line-height:1.8;background:var(--bg3);border-radius:var(--r);padding:10px;margin-bottom:10px">
-              <strong style="color:var(--text);display:block;margin-bottom:3px">订单宝配置步骤</strong>
-              1. 登录订单宝 → 设置 → 开放接口<br>
-              2. 新建Webhook，事件类型选「新订单创建」<br>
-              3. 填入上方接收地址 → 复制密钥<br>
-              4. 开启后每条新订单实时推送至本看板
+            <!-- CONNECTION STATUS BAR -->
+            <div id="wh-status-bar" style="display:flex;align-items:center;gap:10px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:10px 12px;margin-bottom:12px">
+              <div id="wh-dot" style="width:9px;height:9px;border-radius:50%;background:var(--text3);flex-shrink:0"></div>
+              <div style="flex:1">
+                <div style="font-size:12px;font-weight:600" id="wh-status-txt">未连接 — 请输入 n8n 地址后点击连接</div>
+                <div style="font-size:10px;color:var(--text3)" id="wh-status-sub">轮询间隔: 每10秒检查一次新订单</div>
+              </div>
+              <button class="btn btn-ghost btn-sm" id="wh-toggle-btn" onclick="toggleWebhookConn()">▶ 开始连接</button>
             </div>
-            <button class="btn btn-ghost" style="width:100%">保存配置</button>
+
+            <!-- N8N URL INPUT -->
+            <div class="form-g">
+              <label>n8n Webhook 地址 <span style="color:var(--teal);font-size:10px;text-transform:none;letter-spacing:0">（从 n8n 复制）</span></label>
+              <div style="display:flex;gap:6px">
+                <input type="text" id="wh-url" placeholder="https://你的n8n地址.app.n8n.cloud/webhook/xmotors-orders" style="flex:1;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:7px 11px;color:var(--text);font-size:12px;outline:none;font-family:monospace" oninput="saveWhConfig()"/>
+                <button class="btn btn-teal btn-sm" onclick="testWebhookConn()">测试</button>
+              </div>
+            </div>
+
+            <!-- SECRET KEY -->
+            <div class="form-g">
+              <label>密钥 (Secret Key) <span style="color:var(--text3);font-size:10px;text-transform:none;letter-spacing:0">— 可选，用于验证来源</span></label>
+              <input type="password" id="wh-secret" placeholder="留空则不验证" style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:7px 11px;color:var(--text);font-size:12px;outline:none;width:100%" oninput="saveWhConfig()"/>
+            </div>
+
+            <!-- POLLING INTERVAL -->
+            <div class="form-g">
+              <label>轮询间隔</label>
+              <select id="wh-interval" onchange="saveWhConfig()" style="background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);padding:7px 11px;color:var(--text);font-size:12px;outline:none;width:100%">
+                <option value="10000">每 10 秒（推荐）</option>
+                <option value="30000">每 30 秒</option>
+                <option value="60000">每 1 分钟</option>
+                <option value="300000">每 5 分钟</option>
+              </select>
+            </div>
+
+            <!-- AUTO CONFIRM TOGGLE -->
+            <div style="display:flex;align-items:center;justify-content:space-between;background:var(--bg3);border-radius:var(--r);padding:10px 12px;margin-bottom:12px">
+              <div>
+                <div style="font-size:12px;font-weight:600">自动确认入库</div>
+                <div style="font-size:11px;color:var(--text2)">开启后新订单无需手动点击确认，直接进入采购列表</div>
+              </div>
+              <label style="position:relative;display:inline-block;width:36px;height:20px;flex-shrink:0">
+                <input type="checkbox" id="wh-autoconfirm" onchange="saveWhConfig()" style="opacity:0;width:0;height:0">
+                <span id="wh-toggle-track" onclick="document.getElementById('wh-autoconfirm').click()" style="position:absolute;cursor:pointer;inset:0;background:var(--border2);border-radius:20px;transition:.2s"></span>
+                <span id="wh-toggle-thumb" style="position:absolute;height:14px;width:14px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:.2s;pointer-events:none"></span>
+              </label>
+            </div>
+
+            <!-- GUIDE BOX -->
+            <div style="font-size:11px;color:var(--text2);line-height:1.9;background:var(--bg3);border-radius:var(--r);padding:12px;margin-bottom:12px;border-left:3px solid var(--teal)">
+              <strong style="color:var(--teal);display:block;margin-bottom:4px">📋 零基础配置步骤（5分钟）</strong>
+              <strong style="color:var(--text)">第一步：</strong> 打开 <a href="https://n8n.io" target="_blank" style="color:var(--teal)">n8n.io</a> → 免费注册账号<br>
+              <strong style="color:var(--text)">第二步：</strong> 导入我们提供的 <code style="background:var(--bg4);padding:1px 4px;border-radius:3px">xmotors-orderbot.json</code> 工作流<br>
+              <strong style="color:var(--text)">第三步：</strong> 在 n8n 里填入你的 WhatsApp 号码和 AI 密钥<br>
+              <strong style="color:var(--text)">第四步：</strong> 复制 n8n 给你的 Webhook URL → 粘贴到上方输入框<br>
+              <strong style="color:var(--text)">第五步：</strong> 点击「开始连接」— 完成！✅<br>
+              <div style="margin-top:6px;padding-top:6px;border-top:1px solid var(--border)">💬 加盟商在 WhatsApp 发订单 → n8n 自动解析 → 实时出现在左侧队列</div>
+            </div>
+
+            <!-- TEST RESULT -->
+            <div id="wh-test-result" style="display:none;font-size:11px;border-radius:var(--r);padding:8px 10px;margin-bottom:10px"></div>
+
+            <!-- SAVE BTN -->
+            <button class="btn btn-teal" style="width:100%" onclick="saveAndActivateWebhook()">💾 保存并激活连接</button>
+            <div id="wh-save-ok" style="display:none;margin-top:6px" class="alert alert-success">✅ 配置已保存，正在连接...</div>
           </div>
         </div>
       </div>
@@ -485,7 +632,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: DASHBOARD ══ -->
 <div class="page active" id="page-dashboard">
   <div class="kpi-grid">
@@ -507,7 +654,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
   </div>
   <div class="alert alert-purple" style="cursor:pointer" onclick="nav('recommendations')">🤖 <strong>AI业务建议</strong> — 发现5条可落地建议：CASTROL DOT3缺货风险极高·斋月备货窗口仅剩3周·MOBIL CVTF需求骤增5.7倍 → <span style="text-decoration:underline">点击查看全部建议</span></div>
 </div>
- 
+
 <!-- ══ PAGE: INVENTORY ══ -->
 <div class="page" id="page-inventory">
   <div id="inv-locked" class="locked" style="display:none"><div style="font-size:40px;opacity:.2">🔒</div><div style="font-weight:600">权限不足</div><div style="font-size:12px">库存信息仅供应链管理员查看</div></div>
@@ -518,7 +665,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div class="kpi-card amber"><div class="kpi-lbl">偏低注意 SKU</div><div class="kpi-val" id="inv-warn">—</div></div>
       <div class="kpi-card red"><div class="kpi-lbl">库存告急 SKU</div><div class="kpi-val" id="inv-low">—</div></div>
     </div>
- 
+
     <!-- Inventory Table -->
     <div class="card">
       <div class="card-hd">
@@ -541,10 +688,10 @@ tr:hover td{background:rgba(255,255,255,.02)}
         </div>
       </div>
     </div>
- 
+
     <!-- Stock Chart -->
     <div class="card"><div class="card-hd"><div class="card-title">库存对比（当前 vs 标准 vs 安全线）</div></div><div class="card-bd"><div class="chart-wrap h380"><canvas id="c-stock-compare"></canvas></div></div></div>
- 
+
     <!-- Clearance Recommendations -->
     <div class="card">
       <div class="card-hd"><div class="card-title">🧹 清库建议</div><span class="badge b-yellow">基于库龄+销速分析</span></div>
@@ -552,7 +699,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: ORDERS ══ -->
 <div class="page" id="page-orders">
   <div class="alert alert-info">📋 汇总所有来源采购申请（订单宝同步 + 加盟商手动提交），供应链团队统一审核</div>
@@ -569,7 +716,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     <div class="card-bd" id="orders-list"><div style="color:var(--text2);text-align:center;padding:40px">暂无采购申请</div></div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: LOGISTICS ══ -->
 <div class="page" id="page-logistics">
   <div class="three-col">
@@ -593,7 +740,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: SALES ══ -->
 <div class="page" id="page-sales">
   <div class="kpi-grid">
@@ -614,7 +761,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div></div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: FRANCHISE ══ -->
 <div class="page" id="page-franchise">
   <div id="fr-locked" class="locked" style="display:none"><div style="font-size:40px;opacity:.2">🔒</div><div style="font-weight:600">权限不足</div></div>
@@ -626,7 +773,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: AI FORECAST ══ -->
 <div class="page" id="page-ai-forecast">
   <div class="kpi-grid" style="grid-template-columns:repeat(5,1fr)">
@@ -636,7 +783,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     <div class="kpi-card red"><div class="kpi-lbl">缺货风险 SKU</div><div class="kpi-val">2</div><div class="kpi-sub down">CASTROL/PRESTONE</div></div>
     <div class="kpi-card green"><div class="kpi-lbl">预测置信度</div><div class="kpi-val">82%</div><div class="kpi-sub">基于12个月数据</div></div>
   </div>
- 
+
   <!-- MAIN FORECAST CHART -->
   <div class="card">
     <div class="card-hd">
@@ -660,7 +807,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
   </div>
- 
+
   <!-- Sub-tabs -->
   <div class="tabs-bar">
     <div class="tab-btn active" onclick="switchAI('product',this)">产品级预测</div>
@@ -670,63 +817,63 @@ tr:hover td{background:rgba(255,255,255,.02)}
     <div class="tab-btn" onclick="switchAI('procure',this)">采购建议</div>
     <div class="tab-btn" onclick="switchAI('method',this)">预测依据</div>
   </div>
- 
+
   <!-- Product Forecast -->
   <div id="ai-product">
     <div class="two-col">
       <div class="card" style="margin-bottom:0">
-<div class="page" id="page-franchise">
-  <div id="fr-locked" class="locked" style="display:none"><div style="font-size:40px;opacity:.2">🔒</div><div style="font-weight:600">权限不足</div></div>
-  <div id="fr-content">
-        <div class="alert alert-info" style="margin-bottom:12px;font-size:12px">
-      📌 月采购目标 <strong style="color:var(--amber)">Rp 8.5M / 店</strong> &emsp; 年采购目标 <strong style="color:var(--amber)">Rp 100M / 店</strong> &emsp; 点击门店卡片查看详情
-    </div>
-    <div class="franchise-chips" id="fr-chips" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:12px"></div>
- 
-    <!-- Drill-down detail panel (hidden until a chip is clicked) -->
-    <div class="fr-detail" id="fr-detail" style="display:none">
-      <div class="fr-detail-hd">
-        <div>
-          <div class="fr-detail-name" id="fr-d-name">—</div>
-          <div style="font-size:11px;color:var(--text2);margin-top:2px" id="fr-d-sub">—</div>
-        </div>
-        <span class="badge" id="fr-d-risk-badge"></span>
-        <div style="margin-left:auto"><button class="btn btn-ghost btn-sm" onclick="closeFrDetail()">× 关闭</button></div>
+        <div class="card-hd"><div class="card-title">产品需求预测 Mar–May 2026</div></div>
+        <div class="card-bd" style="padding:0"><div class="tbl-wrap">
+        <table>
+          <thead><tr>
+            <th>产品</th><th>类别</th><th style="text-align:right">趋势系数</th>
+            <th style="text-align:right">Mar-26<br><span style="color:var(--teal)">斋月调整</span></th>
+            <th style="text-align:right">Apr-26<br><span style="color:var(--amber)">Lebaran前</span></th>
+            <th style="text-align:right">May-26<br><span style="color:var(--green)">旱季启动</span></th>
+            <th>紧迫度</th>
+          </tr></thead>
+          <tbody id="ai-product-tbody"></tbody>
+        </table>
+        </div></div>
       </div>
-      <div class="fr-detail-bd">
-        <!-- Target progress bars -->
-        <div class="target-grid">
-          <div>
-            <div class="target-wrap">
-              <div class="target-hd"><span class="target-title">本月采购目标达成</span><span class="target-pct" id="fr-d-mo-pct">—</span></div>
-              <div class="target-bar"><div class="target-fill" id="fr-d-mo-bar" style="width:0%;background:var(--amber)"></div></div>
-              <div class="target-sub"><span id="fr-d-mo-actual">—</span><span style="color:var(--text3)">目标 Rp 8.5M</span></div>
-            </div>
-          </div>
-          <div>
-            <div class="target-wrap">
-              <div class="target-hd"><span class="target-title">年度采购目标达成 (YTD)</span><span class="target-pct" id="fr-d-yr-pct">—</span></div>
-              <div class="target-bar"><div class="target-fill" id="fr-d-yr-bar" style="width:0%;background:var(--blue)"></div></div>
-              <div class="target-sub"><span id="fr-d-yr-actual">—</span><span style="color:var(--text3)">目标 Rp 100M</span></div>
-            </div>
-          </div>
-        </div>
-        <!-- Stats row -->
-        <div class="fr-stats-row">
-          <div class="fr-stat amber"><div class="fr-stat-val" id="fr-d-best-m">—</div><div class="fr-stat-lbl">最佳月份</div></div>
-          <div class="fr-stat blue"><div class="fr-stat-val" id="fr-d-ytd">—</div><div class="fr-stat-lbl">YTD总销售</div></div>
-          <div class="fr-stat" id="fr-d-inv-stat"><div class="fr-stat-val" id="fr-d-inv-amt">—</div><div class="fr-stat-lbl">待收发票</div></div>
-        </div>
-        <!-- Monthly breakdown chart -->
-        <div class="chart-wrap h200"><canvas id="c-fr-drill"></canvas></div>
+      <div class="card" style="margin-bottom:0">
+        <div class="card-hd"><div class="card-title">TOP6产品 3个月预测对比</div></div>
+        <div class="card-bd"><div class="chart-wrap h320"><canvas id="c-product-fc"></canvas></div></div>
       </div>
-    </div>
- 
-    <div class="two-col">
-            <div class="card"><div class="card-hd"><div class="card-title">月度销售对比（TOP8）</div></div><div class="card-bd"><div class="chart-wrap h300"><canvas id="c-fr-monthly"></canvas></div></div></div>
-      <div class="card"><div class="card-hd"><div class="card-title">采购品类需求</div></div><div class="card-bd"><div class="chart-wrap h300"><canvas id="c-fr-cat"></canvas></div></div></div>
     </div>
   </div>
+
+  <!-- Franchise Forecast -->
+  <div id="ai-franchise" style="display:none">
+    <div class="two-col">
+      <div class="card" style="margin-bottom:0">
+        <div class="card-hd"><div class="card-title">加盟商 Mar-26 预测销售额</div></div>
+        <div class="card-bd" style="padding:0"><div class="tbl-wrap">
+        <table>
+          <thead><tr><th>加盟商</th><th style="text-align:right">Nov-25</th><th style="text-align:right">Feb-26</th><th style="text-align:right">Mar-26 预测</th><th>环比</th><th>风险</th></tr></thead>
+          <tbody id="ai-fr-tbody"></tbody>
+        </table>
+        </div></div>
+      </div>
+      <div class="card" style="margin-bottom:0">
+        <div class="card-hd"><div class="card-title">加盟商预测收入分布</div></div>
+        <div class="card-bd"><div class="chart-wrap h320"><canvas id="c-fr-fc"></canvas></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Season Analysis -->
+  <div id="ai-season" style="display:none">
+    <div class="two-col">
+      <div class="card" style="margin-bottom:0">
+        <div class="card-hd"><div class="card-title">印尼季节性因子 & 节假日影响</div></div>
+        <div class="card-bd">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div class="rec-card rec-critical">
+              <div class="rec-hd"><span class="badge b-red">🔴 高影响</span><div class="rec-title">Ramadan 2026（约2月18日起）</div></div>
+              <div class="rec-body">斋月期间消费前移，门店客流下降约20-30%。部分供应商运力下降30-40%。历史数据显示4月Lebaran期间销量骤降至正常月份22%（269件 vs 1,200件均值）。</div>
+              <div class="rec-action">应在2月底前完成Mar-26全部采购备货。Ramadan期间需求预测调减25%，Lebaran后（4月中旬）预期反弹+30%。</div>
+            </div>
             <div class="rec-card rec-high">
               <div class="rec-hd"><span class="badge b-yellow">🟡 中影响</span><div class="rec-title">印尼旱季（5月–9月）</div></div>
               <div class="rec-body">道路条件恶化，车辆磨损加剧。历史数据：Jun-Aug销量较May高出40-60%。齿轮油、车桥油、制动液需求显著上升，润滑油类季节性峰值。</div>
@@ -746,7 +893,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
   </div>
- 
+
   <!-- Anomaly -->
   <div id="ai-anomaly" style="display:none">
     <div class="card">
@@ -759,7 +906,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div></div>
     </div>
   </div>
- 
+
   <!-- Procurement Plan -->
   <div id="ai-procure" style="display:none">
     <div class="alert alert-red">🔴 <strong>Lebaran 2026备货窗口紧迫：</strong>预计3月21-22日。应在2月底前完成Mar-26全部采购，Ramadan期间部分供应商运力下降30-40%，补货窗口将关闭。</div>
@@ -773,7 +920,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div></div>
     </div>
   </div>
- 
+
   <!-- Method -->
   <div id="ai-method" style="display:none">
     <div class="two-col">
@@ -800,7 +947,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: RECOMMENDATIONS ══ -->
 <div class="page" id="page-recommendations">
   <div class="alert alert-purple">🤖 以下建议基于实时库存、销售趋势、物流状态、加盟商绩效、AI预测综合生成，每小时自动更新</div>
@@ -812,7 +959,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
   </div>
   <div id="rec-list"></div>
 </div>
- 
+
 <!-- ══ PAGE: OPERATIONS ══ -->
 <div class="page" id="page-operations">
   <div class="three-col">
@@ -834,7 +981,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div></div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: MY SALES ══ -->
 <div class="page" id="page-my-sales">
   <div class="kpi-grid" id="my-kpi"></div>
@@ -843,7 +990,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     <div class="card"><div class="card-hd"><div class="card-title">我的采购记录</div></div><div class="card-bd" id="my-order-list"><div style="color:var(--text2);text-align:center;padding:30px">暂无记录</div></div></div>
   </div>
 </div>
- 
+
 <!-- ══ PAGE: MY ORDERS ══ -->
 <div class="page" id="page-my-orders">
   <div class="alert alert-info">📝 提交所需产品，供应链团队将在2个工作日内审核</div>
@@ -881,12 +1028,12 @@ tr:hover td{background:rgba(255,255,255,.02)}
     <div class="card"><div class="card-hd"><div class="card-title">我的申请记录</div></div><div class="card-bd" id="my-history"><div style="color:var(--text2);text-align:center;padding:30px">暂无记录</div></div></div>
   </div>
 </div>
- 
+
       </div><!-- /content -->
     </div><!-- /main -->
   </div><!-- /app-row -->
 </div><!-- /app -->
- 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 // ══════════════════════════════════════════
@@ -905,7 +1052,7 @@ function setLang(l,btn){
   if(btn) btn.classList.add('active');
   document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(I18N[l]&&I18N[l][k]) el.textContent=I18N[l][k];});
 }
- 
+
 // ══════════════════════════════════════════
 // DATA
 // ══════════════════════════════════════════
@@ -926,7 +1073,7 @@ const PRODUCTS = [
   {brand:'BOSCH',cat:'电池',name:'BOSCH Battery MF Blue 55D23L',sell:950000,klg:8,pik2:10,ho:6,inTransit:0,soq:18,safety:8,std:20,pendingIn:0,pendingOut:3},
   {brand:'BOSCH',cat:'机滤',name:'BOSCH Oil Filter O1041',sell:48000,klg:40,pik2:35,ho:50,inTransit:0,soq:120,safety:40,std:97,pendingIn:0,pendingOut:20},
 ];
- 
+
 const FRANCHISEES = [
   {name:'Pit Stop 3',nov:8200000,dec:3100000,jan:4800000,feb:9100000,mar_pred:5507584,risk:'stable'},
   {name:'Subur Makmur Ban',nov:0,dec:0,jan:5648170,feb:0,mar_pred:5930578,risk:'volatile'},
@@ -943,7 +1090,7 @@ const FRANCHISEES = [
   {name:'Honda Auto Duren Sawit',nov:0,dec:2675920,jan:0,feb:9256982,mar_pred:6264774,risk:'growth'},
   {name:'Lavender Car Solution',nov:1075100,dec:4081175,jan:6204861,feb:2618850,mar_pred:4632448,risk:'stable'},
 ];
- 
+
 const MONTHLY_HIST = [1139,269,1245,3666,3019,3963,3394,3493,5323,7023,5309,5691];
 const MONTHLY_REV  = [669.7,94.8,102.3,175.4,210.4,303.2,372.4,502.7,908.4,1001.7,1055.7,1287.6];
 const FC_LABELS = ['Mar-25','Apr-25','May-25','Jun-25','Jul-25','Aug-25','Sep-25','Oct-25','Nov-25','Dec-25','Jan-26','Feb-26','Mar-26*','Apr-26*','May-26*'];
@@ -953,7 +1100,7 @@ const FC_UPPER = [null,null,null,null,null,null,null,null,null,null,null,5691,82
 const FC_LOWER = [null,null,null,null,null,null,null,null,null,null,null,5691,6089,6210,6332];
 const FC_REV_HIST = [669.7,94.8,102.3,175.4,210.4,303.2,372.4,502.7,908.4,1001.7,1055.7,1287.6,null,null,null];
 const FC_REV_PRED = [null,null,null,null,null,null,null,null,null,null,null,1287.6,1621,1653,1685];
- 
+
 const PRODUCT_FC = [
   {name:'MOBIL Dexron-VI ATF 1L',cat:'变速箱油',trend:1.67,mar:152,apr:173,may:223,urg:'red'},
   {name:'SHELL Spirax ATF 6 1L',cat:'变速箱油',trend:1.83,mar:82,apr:93,may:120,urg:'yellow'},
@@ -966,7 +1113,7 @@ const PRODUCT_FC = [
   {name:'CASTROL Brake Fluid DOT 4',cat:'制动液',trend:1.58,mar:53,apr:60,may:78,urg:'yellow'},
   {name:'PRESTONE DOT 3 - 1000ml',cat:'制动液',trend:1.55,mar:42,apr:48,may:62,urg:'yellow'},
 ];
- 
+
 const ANOMALIES = [
   {type:'销量骤降 ↓',item:'全旗舰店',month:'Apr-25',actual:'269件',normal:'1,200件',dev:'0.22x',reason:'Lebaran 2025（3月31日–4月4日）门店停业，供应链停滞',action:'已知季节性，提前备货覆盖假期前后缓冲期'},
   {type:'销量骤增 ↑',item:'FIXCOOL制动清洁剂',month:'Nov-25',actual:'516件',normal:'~75件',dev:'6.9x',reason:'疑似大宗采购/团购订单或促销活动，非正常消费需求',action:'确认是否一次性订单；如为促销，评估是否复制'},
@@ -977,137 +1124,138 @@ const ANOMALIES = [
   {type:'加盟商断月 ↓',item:'ADS Prima',month:'Dec-25',actual:'IDR 0',normal:'~IDR 14M/月',dev:'0x',reason:'12月无销售记录，可能为结算延迟或门店临时停业',action:'与ADS Prima确认DEC数据是否缺失或结算问题'},
   {type:'加盟商异常高 ↑',item:'CV Sun',month:'Jan-26',actual:'IDR 68.5M',normal:'~IDR 18M',dev:'3.8x',reason:'1月销售额为4个月最高，疑似年底囤货或大单',action:'评估CV Sun信用及回款情况，是否需调整账期'},
 ];
- 
+
 const PROCURE_PLAN = [
   {name:'MOBIL Dexron-VI ATF 1L',cat:'变速箱油',stock:180,feb_actual:212,mar_pred:160,safety:80,order:240,urg:'red',note:'核心SKU，月均89单位，持续上涨'},
   {name:'MOBIL CVTF Multi-Vehicle 1L',cat:'变速箱油',stock:66,feb_actual:172,mar_pred:130,safety:65,order:195,urg:'red',note:'强劲增长，Feb翻2.5倍'},
-  </div>
-</div>
- 
-<!-- ══ PAGE: INVOICES ══ -->
-<div class="page" id="page-invoices">
-  <!-- Admin: overdue alert -->
-  <div class="alert alert-red" id="inv-overdue-alert" style="display:none"></div>
-  <!-- KPI row -->
-  <div class="kpi-grid" id="inv-kpi-grid">
-    <div class="kpi-card amber"><div class="kpi-lbl">待付发票</div><div class="kpi-val" id="inv-k-pending">—</div><div class="kpi-sub">笔</div></div>
-    <div class="kpi-card red"><div class="kpi-lbl">已逾期</div><div class="kpi-val" id="inv-k-overdue">—</div><div class="kpi-sub down">需立即跟进</div></div>
-    <div class="kpi-card blue"><div class="kpi-lbl">3天内到期</div><div class="kpi-val" id="inv-k-due3">—</div><div class="kpi-sub">即将到期</div></div>
-    <div class="kpi-card green"><div class="kpi-lbl">待收款总额</div><div class="kpi-val" id="inv-k-total">—</div><div class="kpi-sub">IDR</div></div>
-  </div>
-  <!-- Create invoice button (admin only) -->
-  <div id="inv-admin-bar" style="display:none;margin-bottom:14px;display:flex;gap:8px;flex-wrap:wrap">
-    <button class="btn btn-primary" onclick="openInvModal()">＋ 新建发票</button>
-    <button class="btn btn-ghost btn-sm" onclick="filterInv('all')">全部</button>
-    <button class="btn btn-ghost btn-sm" onclick="filterInv('pending')">待付</button>
-    <button class="btn btn-ghost btn-sm" onclick="filterInv('overdue')">逾期</button>
-    <button class="btn btn-ghost btn-sm" onclick="filterInv('reminder_sent')">已提醒</button>
-    <button class="btn btn-ghost btn-sm" onclick="filterInv('paid')">已付</button>
-  </div>
-  <!-- Franchise filter bar (franchise only) -->
-  <div id="inv-fr-bar" style="display:none;margin-bottom:14px">
-    <div class="alert alert-info" style="margin-bottom:10px">📋 以下为您门店的应付发票，请按账期及时付款。如有疑问请联系供应链团队。</div>
-  </div>
- 
-  <div class="card">
-    <div class="card-hd">
-      <div class="card-title" id="inv-table-title">发票列表</div>
-      <span class="badge b-gray" id="inv-count-badge">—</span>
-    </div>
-    <div class="card-bd" style="padding:0">
-      <div class="tbl-wrap">
-        <table>
-          <thead><tr>
-            <th>发票号</th>
-            <th>加盟商</th>
-            <th style="text-align:right">金额 (IDR)</th>
-            <th>开票日期</th>
-            <th>到期日</th>
-            <th style="text-align:right">剩余天数</th>
-            <th>状态</th>
-            <th>操作</th>
-          </tr></thead>
-          <tbody id="inv-tbody"></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
- 
-  <div class="card" id="inv-payment-tips">
-    <div class="card-hd"><div class="card-title">账期说明</div></div>
-    <div class="card-bd" style="font-size:13px;color:var(--text2);line-height:1.8">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-        <div>
-          <div style="font-weight:600;color:var(--text);margin-bottom:6px">付款周期</div>
-          标准账期：<strong style="color:var(--amber)">Net 30天</strong>（自发票开立日起）<br>
-          超大额订单（>Rp50M）：<strong style="color:var(--amber)">Net 45天</strong><br>
-          新加盟商首6个月：<strong style="color:var(--amber)">Net 15天</strong>
-        </div>
-        <div>
-          <div style="font-weight:600;color:var(--text);margin-bottom:6px">逾期处理</div>
-          逾期3天内：系统自动WhatsApp提醒<br>
-          逾期7天：供应链团队电话跟进<br>
-          逾期30天：暂停新订单审批
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
- 
-<!-- ══ MODAL: New Invoice ══ -->
-<div class="modal-overlay" id="inv-modal">
-  <div class="modal-box">
-    <div class="modal-hd">
-      <div class="modal-title">新建发票</div>
-      <button class="modal-close" onclick="closeInvModal()">×</button>
-    </div>
-    <div class="modal-bd">
-      <div class="form-row">
-        <div class="form-g">
-          <label>加盟商门店</label>
-          <select id="inv-m-store">
-            <option value="">-- 选择门店 --</option>
-            <option>Pit Stop 3</option><option>Subur Makmur Ban</option><option>Bengkel Pegasus</option>
-            <option>Autocraft</option><option>Autones</option><option>ADS Prima</option>
-            <option>Auto Mekanika</option><option>Bengkel Multi Variasi</option><option>Euro Galleria</option>
-            <option>Drivewell</option><option>CV Sun</option><option>Sumber Timur</option>
-            <option>Honda Auto Duren Sawit</option><option>Lavender Car Solution</option>
-          </select>
-        </div>
-        <div class="form-g">
-          <label>账期（天）</label>
-          <select id="inv-m-terms">
-            <option value="15">Net 15天</option>
-            <option value="30" selected>Net 30天（标准）</option>
-            <option value="45">Net 45天</option>
-            <option value="60">Net 60天</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-g"><label>金额 (Rp)</label><input type="number" id="inv-m-amount" placeholder="例：9100000" min="0"/></div>
-        <div class="form-g"><label>开票日期</label><input type="date" id="inv-m-date"/></div>
-      </div>
-      <div class="form-g"><label>备注</label><textarea id="inv-m-notes" placeholder="货款周期、对应订单号等…"></textarea></div>
-      <div class="alert alert-info" style="margin-bottom:12px;font-size:12px">
-        到期日 = 开票日期 + 账期天数，系统会在到期前3天自动发送WhatsApp提醒
-      </div>
-      <div style="display:flex;gap:8px">
-        <button class="btn btn-primary" onclick="submitInvoice()" style="flex:1">创建发票</button>
-        <button class="btn btn-ghost" onclick="closeInvModal()">取消</button>
-      </div>
-      <div id="inv-modal-ok" class="alert alert-success" style="display:none;margin-top:10px"></div>
-    </div>
-  </div>
-</div>
- 
-      </div><!-- /content -->
-    </div><!-- /main -->
-  </div><!-- /app-row -->
+  {name:'CASTROL Brake Fluid DOT 3',cat:'制动液',stock:1,feb_actual:188,mar_pred:141,safety:71,order:212,urg:'red',note:'缺货风险！当前库存=1'},
+  {name:'SHELL Spirax ATF 6 1L',cat:'变速箱油',stock:110,feb_actual:88,mar_pred:66,safety:33,order:99,urg:'yellow',note:'稳定需求，建议补货'},
+  {name:'SHELL Axle Oil S2 A 1L',cat:'车桥油',stock:109,feb_actual:60,mar_pred:45,safety:23,order:68,urg:'yellow',note:'稳定需求'},
+  {name:'CASTROL Brake Fluid DOT 4',cat:'制动液',stock:53,feb_actual:140,mar_pred:105,safety:53,order:158,urg:'yellow',note:'持续上涨'},
+  {name:'PRESTONE DOT 3 - 1000ml',cat:'制动液',stock:0,feb_actual:0,mar_pred:25,safety:13,order:38,urg:'yellow',note:'新增Feb库存清零'},
+  {name:'MOTUL ATF VI 1L',cat:'变速箱油',stock:57,feb_actual:24,mar_pred:18,safety:9,order:27,urg:'green',note:'缓慢复苏'},
+  {name:'MOBIL Gear Oil 1L',cat:'齿轮油',stock:78,feb_actual:44,mar_pred:33,safety:17,order:50,urg:'green',note:'关注旱季'},
+];
+
+const RECOMMENDATIONS = [
+  {cat:'采购',priority:'critical',title:'CASTROL DOT3 库存仅1桶 — 立即紧急采购',body:'CASTROL Brake Fluid DOT 3 - 500ml当前合计库存仅1桶（KLG:1 / PIK2:0 / HO:0），而2月实际销售188桶，AI预测3月需求141桶（斋月调整后）。当前缺货率99%，正在造成直接销售损失。',action:'立即下单≥212桶（建议300桶含安全库存缓冲），联系CASTROL印尼总代理，要求3日内交货。同时通知所有门店限购管控，每单限购2桶。预计机会成本：已损失约Rp6.6M/周。'},
+  {cat:'采购',priority:'critical',title:'Lebaran 2026备货窗口仅剩3周',body:'Eid al-Fitr 2026预计3月21-22日，Ramadan约2月18日起。进入斋月后部分供应商运力下降30-40%，补货周期将从7天延长至14-21天。历史数据显示：Lebaran前2周采购几乎不可能按时到货。',action:'在2月15日前锁定全部Mar-26采购订单（参见采购建议清单）。重点保障MOBIL ATF Dexron-VI（240件）、MOBIL CVTF（195件）、CASTROL DOT3（212件）。预计Lebaran后（4月15日起）需求反弹+30%，届时同步备货。'},
+  {cat:'库存',priority:'critical',title:'MOBIL CVTF需求骤增5.7倍 — 调整备货策略',body:'MOBIL CVTF Multi-Vehicle 1L在Feb-26销量172件，较历史均值30件增长5.7倍（异常检测确认）。AI趋势系数=2.0，预测3月需求94-138件（斋月调整区间）。当前库存66件，不足支撑半个月需求。',action:'立即追加采购195件（Mar-26采购计划）。同步确认MOBIL印尼分销商库存和供货能力。建议将CVTF列为A类核心SKU，设置≥65件安全库存线。'},
+  {cat:'加盟商',priority:'high',title:'CV Sun 1月销售额异常高 — 关注回款风险',body:'CV Sun 1月销售额IDR 68.5M（同期均值约IDR 18M，偏差3.8倍），可能为大宗囤货订单。当前2月无销售记录（已断月），结合大额采购，存在库存积压或资金周转压力。',action:'联系CV Sun确认1月大额订单性质（是否终端客户采购或门店自身备货）。如为门店自备货，评估其实际消化能力，避免下一订单前大额压货。建议临时调整账期为净30天，加强回款跟进。'},
+  {cat:'物流',priority:'high',title:'JNE Semarang运单信号丢失 — 立即跟进',body:'运单SHP-20250331-002（KLG仓 → Drivewell，JNE-ID-774509231）自3月30日在Semarang分拨后无任何扫描记录，已超36小时。目前货物状态：BOSCH Oil Filter O1041 × 30件、BOSCH Wiper BCA14 × 12件。',action:'立即拨打JNE客服021-2927-8888，提供AWB要求查仓。同时为Drivewell准备备用库存（KLG仓O1041现有40件），若调查超过48小时建议走理赔流程。'},
+  {cat:'季节性',priority:'high',title:'印尼旱季备货 — 5月前提前锁定齿轮油/刹车液',body:'基于历史数据，印尼旱季（6-9月）道路条件恶化，齿轮油/车桥油/制动液需求较5月高出40-60%。Jun-Aug-25实测：MOBIL Gear Oil从24件/月升至108件/月，CASTROL DOT系列同步上涨。',action:'5月20日前完成旱季备货：MOBIL Gear Oil +60%（额外+30件）、SHELL Axle Oil +60%（额外+45件）、CASTROL DOT全系 +40%。预计总追加采购额约Rp 8-12M。'},
+  {cat:'运营',priority:'medium',title:'PRESTONE DOT3 1L库存归零 — 排查原因',body:'PRESTONE Brake Fluid DOT 3 - 1000ml在2月销量归零（历史均值约40件/月），当前库存同样为0。可能原因：库存已耗尽导致销售中断（缺货驱动销量归零），而非需求消失。',action:'立即盘点三仓库存确认实际数量。如确认缺货，纳入Mar-26紧急采购清单（建议38件）。如有库存但未销售，排查门店是否存在SKU混淆或产品质量问题。'},
+  {cat:'运营',priority:'medium',title:'ADS Prima 12月断月 — 确认数据准确性',body:'ADS Prima在Dec-25无任何销售记录（其他月份月均Rp 19M），可能原因：(a)数据录入缺失；(b)门店临时停业；(c)结算延迟未录入系统。需在月度核对中确认。',action:'联系ADS Prima门店负责人确认12月运营情况。如为数据缺失，补录进系统并更新加盟商绩效数据。如确为停业，了解原因，评估是否影响后续订货计划。'},
+];
+
+const SHIPMENTS = [
+  {id:'SHP-20250331-001',wh:'KLG仓',to:'Bengkel Pegasus',city:'Bekasi',status:'pending',carrier:'JNE Express',awb:'JNE-ID-882341209',created:'2026-03-31',eta:'2026-04-02',etaStyle:'ok',etaLabel:'待取件',
+   items:[{name:'MOBIL Dexron-VI ATF 1L',qty:24},{name:'CASTROL Brake Fluid DOT 3',qty:12}],
+   aiSug:'货物待取件，建议催促JNE于今日下午前上门取货，以确保04-02按时到达Bekasi。',
+   timeline:[{time:'03-31 11:00',event:'采购确认 · 出库备货',loc:'KLG仓库',dot:'green'},{time:'03-31 14:00',event:'等待JNE取件',loc:'KLG仓库',dot:'amber',current:true}]},
+  {id:'SHP-20250331-002',wh:'KLG仓',to:'Drivewell',city:'泗水',status:'exc',carrier:'JNE Express',awb:'JNE-ID-774509231',created:'2026-03-29',eta:'2026-04-01',etaStyle:'late',etaLabel:'已延误',
+   excMsg:'系统在Semarang分拨后无任何扫描记录，疑似分拨至错误线路',
+   items:[{name:'BOSCH Oil Filter O1041',qty:30},{name:'BOSCH Wiper BCA14',qty:12}],
+   aiSug:'立即拨打JNE客服021-2927-8888，提供AWB：JNE-ID-774509231要求查仓。为Drivewell准备备用库存，若调查超过48小时建议走理赔流程。',
+   timeline:[{time:'03-29 09:30',event:'货物出库',loc:'KLG仓库 · 雅加达',dot:'green'},{time:'03-29 14:00',event:'快递员已取件',loc:'JNE Jakarta Hub',dot:'green'},{time:'03-30 06:45',event:'⚠ 追踪信号丢失',loc:'JNE Semarang Transit Hub',dot:'red',exc:'系统在Semarang分拨后无任何扫描记录，疑似分拨至错误线路'},{time:'03-31 09:00',event:'承运商内部调查中',loc:'JNE客服跟进',dot:'amber',current:true}]},
+  {id:'SHP-20250331-003',wh:'PIK2仓',to:'Pit Stop 3',city:'汤格朗',status:'transit',carrier:'Wahana Prestasi',awb:'WPN-20250330-4421',created:'2026-03-30',eta:'2026-04-01',etaStyle:'ok',etaLabel:'明日到达',
+   items:[{name:'BOSCH Wiper BCA14',qty:20},{name:'BOSCH Wiper BCA16',qty:20},{name:'BOSCH Wiper BCA18',qty:15}],
+   aiSug:'货物状态正常，预计明日10:00–14:00送达，建议提前通知Pit Stop 3备好签收人员。',
+   timeline:[{time:'03-30 08:30',event:'货物出库',loc:'PIK2仓库 · 雅加达北区',dot:'green'},{time:'03-30 13:00',event:'快递员已取件',loc:'Wahana Jakarta Hub',dot:'green'},{time:'03-31 07:45',event:'运输中，顺利推进',loc:'雅加达 → 汤格朗干道',dot:'amber',current:true}]},
+  {id:'SHP-20250331-004',wh:'PIK2仓',to:'Auto Mekanika',city:'Surabaya',status:'transit',carrier:'Sicepat Ekspres',awb:'SCP-20250331-3301',created:'2026-03-31',eta:'2026-04-02',etaStyle:'ok',etaLabel:'后天到达',
+   items:[{name:'BOSCH Battery MF Blue 55D23L',qty:6},{name:'BOSCH Battery MF Blue NS40ZL',qty:6}],
+   aiSug:'正常在途，预计04-02上午到达苏腊巴亚。Battery产品注意防震，交接时查验外包装。',
+   timeline:[{time:'03-31 11:00',event:'货物出库',loc:'PIK2仓库',dot:'green'},{time:'03-31 15:30',event:'快递员已取件，发往苏腊巴亚',loc:'Sicepat Jakarta Hub',dot:'amber',current:true}]},
+  {id:'SHP-20250330-006',wh:'HO仓',to:'Autones',city:'Depok',status:'delivered',carrier:'TIKI',awb:'TKI-7842901-JKT',created:'2026-03-29',eta:'2026-03-30',signedBy:'Budi S.',signTime:'03-30 16:42',
+   items:[{name:'BOSCH Battery MF Blue NS40ZL',qty:8},{name:'BOSCH Battery MF Blue 55D23L',qty:4}],
+   aiSug:null,
+   timeline:[{time:'03-29 10:00',event:'货物出库',loc:'HO旗舰店仓库',dot:'green'},{time:'03-29 15:30',event:'快递员已取件',loc:'TIKI Jakarta Hub',dot:'green'},{time:'03-30 09:20',event:'到达当地分拨中心',loc:'TIKI Depok Hub',dot:'green'},{time:'03-30 14:00',event:'配送员出发',loc:'TIKI Depok Branch',dot:'green'},{time:'03-30 16:42',event:'✓ 签收完成',loc:'Autones · Depok',dot:'green'}]},
+  {id:'SHP-20250329-007',wh:'KLG仓',to:'CV Sun',city:'Bandung',status:'delivered',carrier:'AnterAja',awb:'AAJ-ID-20250329-991',created:'2026-03-27',eta:'2026-03-29',signedBy:'Ahmad T.',signTime:'03-29 11:15',
+   items:[{name:'BOSCH Oil Filter O1041',qty:30},{name:'BOSCH Wiper BCA16',qty:25},{name:'BOSCH Wiper BCA20',qty:20}],
+   aiSug:null,
+   timeline:[{time:'03-27 09:00',event:'货物出库',loc:'KLG仓库',dot:'green'},{time:'03-27 14:00',event:'快递员已取件',loc:'AnterAja Jakarta Hub',dot:'green'},{time:'03-28 10:30',event:'运输中',loc:'雅加达 → 万隆',dot:'green'},{time:'03-29 08:00',event:'到达当地',loc:'AnterAja Bandung Branch',dot:'green'},{time:'03-29 11:15',event:'✓ 签收完成',loc:'CV Sun · Bandung',dot:'green'}]},
+  {id:'SHP-20250330-008',wh:'KLG仓',to:'Subur Makmur Ban',city:'Bekasi',status:'delivered',carrier:'JNE Express',awb:'JNE-ID-662018834',created:'2026-03-28',eta:'2026-03-30',signedBy:'Susi K.',signTime:'03-30 10:22',
+   items:[{name:'BOSCH Oil Filter O1041',qty:20},{name:'BOSCH Cabin Filter',qty:8}],
+   aiSug:null,
+   timeline:[{time:'03-28 10:00',event:'货物出库',loc:'KLG仓库',dot:'green'},{time:'03-28 15:00',event:'快递员已取件',loc:'JNE Jakarta Hub',dot:'green'},{time:'03-29 09:00',event:'运输中',loc:'雅加达 → 勿加泗',dot:'green'},{time:'03-30 10:22',event:'✓ 签收完成',loc:'Subur Makmur Ban · Bekasi',dot:'green'}]},
+];
+
+// ══════════════════════════════════════════
+// STATE
+// ══════════════════════════════════════════
+let currentRole='', currentUser='', currentPage='dashboard';
+const charts={};
+let orders=[], incomingQ=[], syncedToday=0, syncLog=[], csvParsed=[], demoTimer=null, demoIdx=0, idCounter=1000;
+let fcView='qty'; // 'qty' or 'rev'
+
+// ══════════════════════════════════════════
+// LOGIN
+// ══════════════════════════════════════════
+function selRole(r){
+  document.querySelectorAll('.role-card').forEach(c=>c.classList.remove('sel'));
+  document.getElementById('role-'+r).classList.add('sel');
+  currentRole=r;
+  document.getElementById('fr-select-wrap').style.display=r==='franchise'?'block':'none';
+}
+function doLogin(){
+  if(!currentRole){alert('请选择角色');return;}
+  if(currentRole==='franchise'){const s=document.getElementById('fr-picker').value;if(!s){alert('请选择门店');return;}currentUser=s;}
+  else currentUser={admin:'供应链管理员',ops:'运营分析员',marketing:'市场专员'}[currentRole];
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('app').style.display='flex';
+  initApp();
+}
+function doLogout(){
+  currentRole='';currentUser='';currentPage='dashboard';
+  Object.values(charts).forEach(c=>{try{c.destroy()}catch(e){}});
+  Object.keys(charts).forEach(k=>delete charts[k]);
+  if(demoTimer){clearInterval(demoTimer);demoTimer=null;}
+  document.getElementById('app').style.display='none';
+  document.getElementById('login-screen').style.display='flex';
+  document.querySelectorAll('.role-card').forEach(c=>c.classList.remove('sel'));
+  document.getElementById('fr-select-wrap').style.display='none';
+  document.getElementById('fr-picker').value='';
+}
+function initApp(){
+  const isF=currentRole==='franchise', isA=currentRole==='admin';
+  document.getElementById('ns-sync').style.display=isA?'block':'none';
+  document.getElementById('ns-supply').style.display=isA?'block':'none';
+  document.getElementById('ns-analysis').style.display=!isF?'block':'none';
+  document.getElementById('ns-my').style.display=isF?'block':'none';
+  document.getElementById('u-avatar').textContent=currentUser.charAt(0).toUpperCase();
+  document.getElementById('u-name').textContent=currentUser;
+  document.getElementById('u-role').textContent={admin:'供应链管理',ops:'运营',marketing:'市场',franchise:'加盟商'}[currentRole]||'';
+  const today=new Date().toISOString().split('T')[0];
+  document.getElementById('o-date').value=today;
+  const fut=new Date();fut.setDate(fut.getDate()+14);
+  document.getElementById('o-delivery').value=fut.toISOString().split('T')[0];
+  if(isF)document.getElementById('o-store').value=currentUser;
+  const today2=new Date().toISOString().split('T')[0];
+  document.getElementById('m-date').value=today2;
+  startClock();
+  loadWhConfig();
+  nav('dashboard');
+}
+
+// ══════════════════════════════════════════
+// NAVIGATION
+// ══════════════════════════════════════════
+function nav(p){
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+  document.querySelectorAll('.page').forEach(pg=>pg.classList.remove('active'));
+  const ne=document.getElementById('nav-'+p);if(ne)ne.classList.add('active');
+  const pe=document.getElementById('page-'+p);if(pe)pe.classList.add('active');
+  currentPage=p;
+  const T={sync:'订单宝实时同步',dashboard:'数据总览',inventory:'库存管理',orders:'采购申请管理',logistics:'物流追踪',sales:'销售分析',franchise:'加盟商绩效','ai-forecast':'AI需求预测',recommendations:'业务建议',operations:'运营分析','my-sales':'我的销售','my-orders':'提交采购申请'};
+  document.getElementById('topbar-title').textContent=T[p]||p;
+  renderPage(p);
+  document.getElementById('sidebar').classList.remove('open');
+}
+function renderPage(p){
   const R={sync:renderSync,dashboard:renderDashboard,inventory:renderInventory,orders:renderOrders,logistics:renderLogistics,sales:renderSales,franchise:renderFranchise,'ai-forecast':renderAIForecast,recommendations:renderRec,operations:renderOps,'my-sales':renderMySales,'my-orders':renderMyOrders};
   if(R[p])R[p]();
 }
- 
+
 // ══════════════════════════════════════════
 // CHARTS HELPER
 // ══════════════════════════════════════════
@@ -1118,7 +1266,7 @@ function mkChart(id,cfg){
 }
 const COLORS=['#F0A500','#1E90FF','#3FB950','#F85149','#E3B341','#06B6D4','#A78BFA','#56D364','#FF7B72','#79C0FF','#FFA94D','#69DB7C'];
 const DEF_OPTS={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{ticks:{color:'#8B949E'},grid:{color:'rgba(255,255,255,.05)'}},x:{ticks:{color:'#8B949E'},grid:{display:false}}}};
- 
+
 // ══════════════════════════════════════════
 // DASHBOARD
 // ══════════════════════════════════════════
@@ -1153,7 +1301,7 @@ function renderRecentOrders(){
       <span class="badge ${o.status==='pending'?'b-amber':o.status==='approved'?'b-green':'b-red'}">${o.status==='pending'?'待审核':o.status==='approved'?'已批准':'已拒绝'}</span>
     </div>`).join('');
 }
- 
+
 // ══════════════════════════════════════════
 // INVENTORY
 // ══════════════════════════════════════════
@@ -1218,7 +1366,8 @@ function renderClearance(){
     </div>`;
   }).join('');
 }
- // ══════════════════════════════════════════
+
+// ══════════════════════════════════════════
 // ORDERS
 // ══════════════════════════════════════════
 function renderOrders(f){
@@ -1242,7 +1391,7 @@ function renderOrders(f){
 function filterOrders(f){renderOrders(f);}
 function approveOrder(i){orders[i].status='approved';renderOrders();renderRecentOrders();updateKPIs();}
 function rejectOrder(i){orders[i].status='rejected';renderOrders();renderRecentOrders();updateKPIs();}
- 
+
 // ══════════════════════════════════════════
 // LOGISTICS
 // ══════════════════════════════════════════
@@ -1279,7 +1428,7 @@ function toggleShip(id){
   const el=document.getElementById('sb-'+id);
   el.classList.toggle('open');
 }
- 
+
 // ══════════════════════════════════════════
 // SALES
 // ══════════════════════════════════════════
@@ -1290,46 +1439,45 @@ function renderSales(){
   const top=[{n:'BOSCH Wiper BCA16',b:'BOSCH',q:385,s:9},{n:'BOSCH Wiper BCA14',b:'BOSCH',q:360,s:9},{n:'BOSCH Battery NS40ZL',b:'BOSCH',q:210,s:5},{n:'BOSCH Oil Filter O1041',b:'BOSCH',q:190,s:6},{n:'BOSCH Wiper BCA18',b:'BOSCH',q:185,s:7},{n:'MOBIL Dexron-VI ATF 1L',b:'MOBIL',q:150,s:5},{n:'BOSCH Battery 55D23L',b:'BOSCH',q:120,s:4},{n:'MOBIL CVTF Multi-Vehicle',b:'MOBIL',q:103,s:3},{n:'SHELL Spirax ATF 6 1L',b:'SHELL',q:80,s:3},{n:'CASTROL DOT 3 - 500ml',b:'CASTROL',q:72,s:4}];
   document.getElementById('top-products').innerHTML=top.map((p,i)=>`<tr><td style="color:var(--text2);font-weight:600">${i+1}</td><td style="max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.n}</td><td><span class="badge b-gray">${p.b}</span></td><td style="text-align:right;font-weight:600">${p.q}</td><td style="text-align:right">${p.s}</td><td style="color:var(--amber)">${'█'.repeat(Math.floor(p.q/40))}</td></tr>`).join('');
 }
-  document.getElementById('ns-supply').style.display=isA?'block':'none';
-  document.getElementById('ns-analysis').style.display=!isF?'block':'none';
-  document.getElementById('ns-my').style.display=isF?'block':'none';
-  // Invoices: admin sees all, franchise sees own, ops/marketing hidden
-  document.getElementById('ns-invoice').style.display=(isA||isF)?'block':'none';
-  document.getElementById('u-avatar').textContent=currentUser.charAt(0).toUpperCase();
-  document.getElementById('u-name').textContent=currentUser;
-  document.getElementById('u-role').textContent={admin:'供应链管理',ops:'运营',marketing:'市场',franchise:'加盟商'}[currentRole]||'';
+
+// ══════════════════════════════════════════
+// FRANCHISE
+// ══════════════════════════════════════════
+function renderFranchise(){
+  const canView=currentRole!=='franchise';
+  document.getElementById('fr-locked').style.display=canView?'none':'flex';
+  document.getElementById('fr-content').style.display=canView?'block':'none';
   if(!canView)return;
   document.getElementById('fr-chips').innerHTML=FRANCHISEES.map(f=>{const t=f.nov+f.dec+f.jan+f.feb;return `<div class="fc"><div class="fc-name">${f.name}</div><div class="fc-sales">Rp${(t/1e6).toFixed(1)}M</div></div>`;}).join('');
   const top8=FRANCHISEES.slice(0,8);
   mkChart('c-fr-monthly',{type:'bar',data:{labels:top8.map(f=>f.name.length>10?f.name.substring(0,10)+'…':f.name),datasets:[{label:'NOV',data:top8.map(f=>f.nov),backgroundColor:'#F0A500',borderRadius:2},{label:'DEC',data:top8.map(f=>f.dec),backgroundColor:'#E3B341',borderRadius:2},{label:'JAN',data:top8.map(f=>f.jan),backgroundColor:'#1E90FF',borderRadius:2},{label:'FEB',data:top8.map(f=>f.feb),backgroundColor:'#3FB950',borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#E6EDF3',font:{size:10}}}},scales:{x:{ticks:{color:'#8B949E',font:{size:10}},grid:{display:false}},y:{ticks:{callback:v=>'Rp'+(v/1e6).toFixed(0)+'M',color:'#8B949E'},grid:{color:'rgba(255,255,255,.05)'}}}}});
   mkChart('c-fr-cat',{type:'doughnut',data:{labels:['雨刷','电池','机滤','变速箱油','制动液','其他'],datasets:[{data:[35,22,18,12,7,6],backgroundColor:COLORS,borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{color:'#E6EDF3',font:{size:11},padding:10}}},cutout:'50%'}});
-  const today2=new Date().toISOString().split('T')[0];
-  document.getElementById('m-date').value=today2;
-  startClock();
-  checkBackend(); // Try to connect to backend
-  nav('dashboard');
 }
- 
+
+// ══════════════════════════════════════════
+// AI FORECAST
+// ══════════════════════════════════════════
+let aiTab='product';
+const vLinePlugin={id:'vLine',afterDraw(chart){
   const {ctx,chartArea,scales}=chart;
   if(!scales.x)return;
   const x=scales.x.getPixelForValue(11.5);
   ctx.save();
   ctx.beginPath();ctx.moveTo(x,chartArea.top);ctx.lineTo(x,chartArea.bottom);
   ctx.setLineDash([5,5]);ctx.lineWidth=1.5;ctx.strokeStyle='rgba(167,139,250,.5)';ctx.stroke();
-  const ne=document.getElementById('nav-'+p);if(ne)ne.classList.add('active');
-  const pe=document.getElementById('page-'+p);if(pe)pe.classList.add('active');
-  currentPage=p;
-    const T={sync:'订单宝实时同步',dashboard:'数据总览',inventory:'库存管理',orders:'采购申请管理',logistics:'物流追踪',sales:'销售分析',franchise:'加盟商绩效','ai-forecast':'AI需求预测',recommendations:'业务建议',operations:'运营分析','my-sales':'我的销售','my-orders':'提交采购申请',invoices:'发票管理'};
-  document.getElementById('topbar-title').textContent=T[p]||p;
-  renderPage(p);
-  document.getElementById('sidebar').classList.remove('open');
+  ctx.setLineDash([]);
+  ctx.fillStyle='rgba(167,139,250,.7)';ctx.font='11px sans-serif';ctx.textAlign='center';
+  ctx.fillText('← 历史',x-40,chartArea.top+14);
+  ctx.fillText('预测 →',x+40,chartArea.top+14);
+  ctx.restore();
+}};
+
+function renderAIForecast(){
+  drawMainFC();
+  renderAITab(aiTab);
 }
-function renderPage(p){
-    const R={sync:renderSync,dashboard:renderDashboard,inventory:renderInventory,orders:renderOrders,logistics:renderLogistics,sales:renderSales,franchise:renderFranchise,'ai-forecast':renderAIForecast,recommendations:renderRec,operations:renderOps,'my-sales':renderMySales,'my-orders':renderMyOrders,invoices:renderInvoices};
-  if(R[p])R[p]();
-    if(R[p])R[p]();
-}
- 
+function drawMainFC(){
+  const isRev=fcView==='rev';
   const hist=isRev?FC_REV_HIST:FC_HIST;
   const pred=isRev?FC_REV_PRED:FC_PRED;
   const upper=isRev?FC_REV_PRED.map(v=>v?v*1.12:null):FC_UPPER;
@@ -1437,7 +1585,7 @@ function renderBacktest(){
   const predicted=[6890,5520,5810];
   mkChart('c-backtest',{type:'bar',data:{labels:lbl,datasets:[{label:'实际销量',data:actual,backgroundColor:'#F0A500',borderRadius:4},{label:'模型预测',data:predicted,backgroundColor:'rgba(167,139,250,.5)',borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#E6EDF3',font:{size:11}}}},scales:{x:{ticks:{color:'#8B949E'},grid:{display:false}},y:{ticks:{color:'#8B949E'},grid:{color:'rgba(255,255,255,.05)'}}}}});
 }
- 
+
 // ══════════════════════════════════════════
 // RECOMMENDATIONS
 // ══════════════════════════════════════════
@@ -1454,7 +1602,7 @@ function renderRec(f){
     </div>`).join('');
 }
 function filterRec(f){renderRec(f);}
- 
+
 // ══════════════════════════════════════════
 // OPERATIONS
 // ══════════════════════════════════════════
@@ -1469,7 +1617,7 @@ function renderOps(){
   const ops=[{m:'Nov-25',vol:5323,gmv:'121.9M',sku:0,cost:'—',turn:5.1},{m:'Dec-25',vol:7023,gmv:'80.3M',sku:2,cost:'~2.4M',turn:6.8},{m:'Jan-26',vol:5309,gmv:'131.8M',sku:1,cost:'~1.2M',turn:5.1},{m:'Feb-26',vol:5691,gmv:'52.7M',sku:3,cost:'~5.4M',turn:5.5}];
   document.getElementById('ops-tbody').innerHTML=ops.map(o=>`<tr><td>${o.m}</td><td style="text-align:right;font-weight:600">${o.vol.toLocaleString()}</td><td style="text-align:right">Rp${o.gmv}</td><td style="text-align:right;color:${o.sku>0?'var(--red)':'var(--green)'}">${o.sku}</td><td style="text-align:right;color:var(--red)">${o.cost}</td><td style="text-align:right">${o.turn}x</td></tr>`).join('');
 }
- 
+
 // ══════════════════════════════════════════
 // MY SALES
 // ══════════════════════════════════════════
@@ -1502,7 +1650,124 @@ function submitOrder(){
   clearOrderForm();renderMyOrders();updateKPIs();
 }
 function clearOrderForm(){['o-product','o-qty','o-vehicle','o-note'].forEach(id=>document.getElementById(id).value='');}
- 
+
+// ══════════════════════════════════════════
+// QUICK ENTRY (订单宝快速录入)
+// ══════════════════════════════════════════
+function showQuickEntry(){
+  const p=document.getElementById('quick-entry-panel');
+  if(p){p.scrollIntoView({behavior:'smooth',block:'start'});}
+  const s=document.getElementById('qe-store');if(s)s.focus();
+}
+function quickEntryClear(){
+  ['qe-store','qe-product','qe-qty','qe-amt','qe-note','qe-raw'].forEach(id=>{
+    const el=document.getElementById(id);if(el)el.value='';
+  });
+  ['qe-ok','qe-err'].forEach(id=>{const el=document.getElementById(id);if(el)el.style.display='none';});
+}
+function quickEntrySubmit(){
+  const store=(document.getElementById('qe-store')||{}).value||'';
+  let product=(document.getElementById('qe-product')||{}).value||'';
+  const qty=parseInt((document.getElementById('qe-qty')||{}).value||'0');
+  const amt=(document.getElementById('qe-amt')||{}).value||'';
+  const note=(document.getElementById('qe-note')||{}).value||'';
+  const raw=(document.getElementById('qe-raw')||{}).value||'';
+  const errEl=document.getElementById('qe-err');
+  const okEl=document.getElementById('qe-ok');
+
+  // Validation
+  if(!store){showQeErr('请选择门店');return;}
+  if(!product||product==='__other__'){
+    if(note) product='【待确认】'+note;
+    else{showQeErr('请选择产品，或在备注里填写产品名');return;}
+  }
+  if(!qty||qty<1){showQeErr('请填写数量（至少1）');return;}
+
+  const item={
+    id:'QE-'+Date.now()+'-'+(++idCounter),
+    orderno:'ORD-QE-'+new Date().toISOString().replace(/\D/g,'').slice(0,14),
+    date:new Date().toISOString().split('T')[0],
+    store,product,qty,
+    amount:amt,
+    note: raw?((note?note+' | ':'')+'WA: '+raw.slice(0,60)):note,
+    source:'quick_entry',
+    ts:Date.now()
+  };
+
+  incomingQ.push(item);
+  syncedToday++;
+  addLog('+ 快速录入: '+store+' · '+product+' ×'+qty);
+  refreshQueueUI();updateSyncStatus();setSyncConn();
+
+  if(errEl)errEl.style.display='none';
+  if(okEl){okEl.style.display='block';setTimeout(()=>okEl.style.display='none',3000);}
+
+  // Clear form for next entry
+  ['qe-qty','qe-amt','qe-note','qe-raw'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+  const s=document.getElementById('qe-store');if(s)s.focus();
+}
+function showQeErr(msg){
+  const el=document.getElementById('qe-err');
+  if(el){el.textContent='⚠ '+msg;el.style.display='block';}
+}
+
+// WA Message Auto-Parser
+function parseWAMessage(){
+  const raw=(document.getElementById('qe-raw')||{}).value||'';
+  if(!raw.trim()){showQeErr('请先粘贴 WhatsApp 消息');return;}
+  const lower=raw.toLowerCase();
+
+  // Product keyword map
+  const PKWS=[
+    ['dexron','MOBIL Dexron-VI ATF 1L'],['cvtf','MOBIL CVTF Multi-Vehicle 1L'],
+    ['spirax','SHELL Spirax ATF 6 1L'],['motul atf','MOTUL ATF VI 1L'],
+    ['castrol dot 3','CASTROL DOT 3 - 500ml'],['castrol dot3','CASTROL DOT 3 - 500ml'],
+    ['castrol dot 4','CASTROL DOT 4 - 500ml'],['castrol dot4','CASTROL DOT 4 - 500ml'],
+    ['dot 3','CASTROL DOT 3 - 500ml'],['dot3','CASTROL DOT 3 - 500ml'],
+    ['prestone','PRESTONE DOT 3 - 1000ml'],
+    ['minyak rem','CASTROL DOT 3 - 500ml'],['brake fluid','CASTROL DOT 3 - 500ml'],
+    ['wiper bca14','BOSCH Wiper BCA14'],['wiper bca16','BOSCH Wiper BCA16'],['wiper bca18','BOSCH Wiper BCA18'],
+    ['bosch wiper','BOSCH Wiper BCA16'],['wiper','BOSCH Wiper BCA16'],['karet wiper','BOSCH Wiper BCA16'],
+    ['ns40','BOSCH Battery NS40ZL'],['55d23','BOSCH Battery 55D23L'],
+    ['aki','BOSCH Battery NS40ZL'],['battery','BOSCH Battery NS40ZL'],
+    ['oil filter','BOSCH Oil Filter O1041'],['filter oli','BOSCH Oil Filter O1041'],
+    ['o1041','BOSCH Oil Filter O1041'],
+  ];
+
+  let foundProduct='';
+  for(const [kw,name] of PKWS){
+    if(lower.includes(kw)){foundProduct=name;break;}
+  }
+
+  // Qty patterns
+  let foundQty='';
+  const qtyPats=[
+    /(\d+)\s*(pcs|pc|buah|biji|botol|桶|个|box|dus|unit|lusin)/i,
+    /[×x]\s*(\d+)/i,/qty\s*[:\s]*(\d+)/i,/jumlah\s*[:\s]*(\d+)/i,
+    /(\d+)\s*$/m,/(\d+)/
+  ];
+  for(const p of qtyPats){const m=raw.match(p);if(m&&parseInt(m[1])>0){foundQty=m[1];break;}}
+
+  // Fill fields
+  if(foundProduct){
+    const sel=document.getElementById('qe-product');
+    if(sel){for(let i=0;i<sel.options.length;i++){if(sel.options[i].value===foundProduct){sel.value=foundProduct;break;}}}
+  }
+  if(foundQty){const el=document.getElementById('qe-qty');if(el)el.value=foundQty;}
+
+  // Note
+  const noteKws=['urgent','segera','急需','急','cepat','asap'];
+  const hasUrgent=noteKws.some(k=>lower.includes(k));
+  if(hasUrgent){const el=document.getElementById('qe-note');if(el&&!el.value)el.value='急需';}
+
+  if(foundProduct||foundQty){
+    const el=document.getElementById('qe-err');if(el)el.style.display='none';
+    addLog('🔍 自动解析: '+(foundProduct||'未识别产品')+' ×'+(foundQty||'?'));
+  }else{
+    showQeErr('未能自动识别产品名，请手动选择。可识别关键词：dexron、castrol dot3、wiper、aki、prestone 等');
+  }
+}
+
 // ══════════════════════════════════════════
 // SYNC WINDOW
 // ══════════════════════════════════════════
@@ -1512,480 +1777,329 @@ function switchSrc(t,el){
   if(el)el.classList.add('active');
   ['csv','manual','webhook'].forEach(s=>document.getElementById('src-'+s).style.display=s===t?'block':'none');
 }
+function parseCSV(){
+  const raw=document.getElementById('csv-input').value.trim();
+  if(!raw){alert('请先粘贴CSV内容');return;}
+  csvParsed=[];
+  raw.split('\n').map(l=>l.trim()).filter(l=>l&&!l.startsWith('#')&&!l.startsWith('订单号')).forEach(line=>{
+    const cols=line.split(',').map(c=>c.trim());
+    if(cols.length>=4)csvParsed.push({orderno:cols[0]||('ORD-'+Date.now()),date:cols[1]||(new Date().toISOString().split('T')[0]),store:cols[2]||'未知',product:cols[3]||'未知',qty:parseInt(cols[4])||1,amount:cols[5]||'',note:cols[6]||''});
+  });
+  if(!csvParsed.length){alert('未解析到有效数据');return;}
+  document.getElementById('csv-cnt').textContent=csvParsed.length;
+  document.getElementById('csv-tbody').innerHTML=csvParsed.map(r=>`<tr><td style="color:var(--teal)">${r.orderno}</td><td>${r.store}</td><td>${r.product}</td><td style="text-align:right">${r.qty}</td></tr>`).join('');
+  document.getElementById('csv-preview').style.display='block';
+  addLog('解析CSV：'+csvParsed.length+'条，请确认导入');
 }
- 
-// ══════════════════════════════════════════
-// FRANCHISE (Interactive Drill-down)
-// ══════════════════════════════════════════
-const MONTHLY_TARGET_FR = 8500000;
-const ANNUAL_TARGET_FR  = 100000000;
-let selectedFr = null;
- 
-function renderFranchise(){
-  const canView=currentRole!=='franchise';
-  document.getElementById('fr-locked').style.display=canView?'none':'flex';
-  document.getElementById('fr-content').style.display=canView?'block':'none';
-  if(!canView)return;
-   
-  // Render clickable chips
-  document.getElementById('fr-chips').innerHTML=FRANCHISEES.map(f=>{
-    const t=f.nov+f.dec+f.jan+f.feb;
-    const latest=f.feb||f.jan||f.dec||f.nov||0;
-    const moPct=Math.min(Math.round(latest/MONTHLY_TARGET_FR*100),999);
-    const fillColor=moPct>=100?'var(--green)':moPct>=60?'var(--amber)':'var(--red)';
-    return `<div class="fr-chip ${selectedFr===f.name?'sel':''}" onclick="selectFr('${f.name}')">
-      <div class="fr-chip-name">${f.name}</div>
-      <div class="fr-chip-sales">Rp${(t/1e6).toFixed(1)}M YTD</div>
-      <div style="margin-top:5px">
-        <div style="background:var(--bg4);border-radius:4px;height:4px;overflow:hidden">
-          <div style="width:${Math.min(moPct,100)}%;height:100%;background:${fillColor};border-radius:4px"></div>
-        </div>
-        <div style="font-size:9px;color:var(--text3);margin-top:2px">月目标 ${moPct}%</div>
-      </div>
-    </div>`;
-  }).join('');
- 
-  // Render overview charts
-  const top8=FRANCHISEES.slice(0,8);
-  mkChart('c-fr-monthly',{type:'bar',data:{labels:top8.map(f=>f.name.length>10?f.name.substring(0,10)+'…':f.name),datasets:[{label:'NOV',data:top8.map(f=>f.nov),backgroundColor:'#F0A500',borderRadius:2},{label:'DEC',data:top8.map(f=>f.dec),backgroundColor:'#E3B341',borderRadius:2},{label:'JAN',data:top8.map(f=>f.jan),backgroundColor:'#1E90FF',borderRadius:2},{label:'FEB',data:top8.map(f=>f.feb),backgroundColor:'#3FB950',borderRadius:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#E6EDF3',font:{size:10}}}},scales:{x:{ticks:{color:'#8B949E',font:{size:10}},grid:{display:false}},y:{ticks:{callback:v=>'Rp'+(v/1e6).toFixed(0)+'M',color:'#8B949E'},grid:{color:'rgba(255,255,255,.05)'}}}}});
-  mkChart('c-fr-cat',{type:'doughnut',data:{labels:['雨刷','电池','机滤','变速箱油','制动液','其他'],datasets:[{data:[35,22,18,12,7,6],backgroundColor:COLORS,borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{color:'#E6EDF3',font:{size:11},padding:10}}},cutout:'50%'}});
- 
-  // Re-show detail if one was selected
-  if(selectedFr) showFrDetail(selectedFr);
+function importCSV(){
+  if(!csvParsed.length){alert('请先点解析预览');return;}
+  csvParsed.forEach(r=>{incomingQ.push({...r,id:'SYNC-'+Date.now()+'-'+(++idCounter),ts:Date.now()});});
+  syncedToday+=csvParsed.length;
+  addLog('CSV导入：'+csvParsed.length+'条进入队列');
+  csvParsed=[];document.getElementById('csv-preview').style.display='none';document.getElementById('csv-input').value='';
+  setSyncConn();refreshQueueUI();updateSyncStatus();
 }
- 
-function selectFr(name){
-  selectedFr = (selectedFr === name) ? null : name;
-  // Update chip highlight
-  document.querySelectorAll('.fr-chip').forEach(c=>c.classList.remove('sel'));
-  if(selectedFr){
-    document.querySelectorAll('.fr-chip').forEach(c=>{if(c.querySelector('.fr-chip-name').textContent===selectedFr)c.classList.add('sel');});
-    showFrDetail(selectedFr);
-  } else {
-    closeFrDetail();
+function addManual(){
+  const store=document.getElementById('m-store').value;
+  const product=document.getElementById('m-product').value;
+  const qty=parseInt(document.getElementById('m-qty').value)||0;
+  if(!store||!product||!qty){alert('请填写门店、产品和数量');return;}
+  incomingQ.push({id:'SYNC-'+Date.now(),orderno:document.getElementById('m-no').value||('ORD-MAN-'+(++idCounter)),date:document.getElementById('m-date').value||(new Date().toISOString().split('T')[0]),store,product,qty,amount:document.getElementById('m-amt').value||'',note:document.getElementById('m-note').value||'',ts:Date.now()});
+  ['m-no','m-store','m-product','m-qty','m-amt','m-note'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+  syncedToday++;setSyncConn();refreshQueueUI();updateSyncStatus();
+  addLog(`手动录入: ${product} ×${qty} (${store})`);
+  const ok=document.getElementById('manual-ok');ok.style.display='block';setTimeout(()=>ok.style.display='none',2200);
+}
+
+const DEMO_DATA=[
+  {store:'Pit Stop 3',product:'MOBIL Dexron-VI ATF 1L',qty:24,amount:'2568000',note:''},
+  {store:'Autocraft',product:'BOSCH Wiper BCA16',qty:48,amount:'3600000',note:''},
+  {store:'Bengkel Pegasus',product:'CASTROL DOT 3 - 500ml',qty:12,amount:'840000',note:'急需'},
+  {store:'ADS Prima',product:'BOSCH Battery NS40ZL',qty:6,amount:'3720000',note:''},
+  {store:'Autones',product:'SHELL Spirax ATF 6 1L',qty:18,amount:'2178000',note:'Honda CR-V'},
+  {store:'Drivewell',product:'PRESTONE DOT 3 - 1000ml',qty:24,amount:'2592000',note:''},
+  {store:'CV Sun',product:'MOTUL ATF VI 1L',qty:12,amount:'1584000',note:''},
+  {store:'Euro Galleria',product:'BOSCH Oil Filter O1041',qty:60,amount:'2880000',note:'定期补货'},
+];
+function startDemo(){
+  if(demoTimer){clearInterval(demoTimer);demoTimer=null;setSyncIdle();addLog('演示已停止');return;}
+  setSyncBlink();addLog('开始模拟订单宝实时推送...');
+  function push(){
+    const o=DEMO_DATA[demoIdx%DEMO_DATA.length];demoIdx++;
+    const item={...o,id:'SYNC-DEMO-'+Date.now(),orderno:'ORD-'+new Date().toISOString().replace(/\D/g,'').slice(0,14)+'-'+(++idCounter),date:new Date().toISOString().split('T')[0],ts:Date.now()};
+    incomingQ.push(item);syncedToday++;
+    addLog(`← 收到: ${item.store} · ${item.product} ×${item.qty}`);
+    refreshQueueUI();updateSyncStatus();setSyncConn();setTimeout(()=>{if(demoTimer)setSyncBlink();},300);
   }
+  push();demoTimer=setInterval(push,3500);
 }
- 
-function showFrDetail(name){
-  const f = FRANCHISEES.find(x=>x.name===name);
-  if(!f) return;
-  const panel = document.getElementById('fr-detail');
-  panel.style.display='block';
- 
-  const months=[{m:'NOV-25',v:f.nov},{m:'DEC-25',v:f.dec},{m:'JAN-26',v:f.jan},{m:'FEB-26',v:f.feb}];
-  const ytd=months.reduce((s,m)=>s+(m.v||0),0);
-  const latest=f.feb||f.jan||f.dec||f.nov||0;
-  const best=months.reduce((a,b)=>b.v>a.v?b:a,{m:'—',v:0});
- 
-  const moPct=+(latest/MONTHLY_TARGET_FR*100).toFixed(1);
-  const yrPct=+(ytd/ANNUAL_TARGET_FR*100).toFixed(1);
-  const moBarW=Math.min(moPct,100);
-  const yrBarW=Math.min(yrPct,100);
-  const moColor=moPct>=100?'var(--green)':moPct>=60?'var(--amber)':'var(--red)';
-  const yrColor=yrPct>=100?'var(--green)':yrPct>=40?'var(--blue)':'var(--yellow)';
- 
-  const riskMap={stable:{txt:'稳定',cls:'b-green'},growth:{txt:'成长',cls:'b-teal'},volatile:{txt:'波动',cls:'b-red'}};
-  const r=riskMap[f.risk]||{txt:f.risk,cls:'b-gray'};
- 
-  document.getElementById('fr-d-name').textContent=f.name;
-  document.getElementById('fr-d-sub').textContent=`Mar-26预测: Rp${(f.mar_pred/1e6).toFixed(2)}M`;
-  document.getElementById('fr-d-risk-badge').className='badge '+r.cls;
-  document.getElementById('fr-d-risk-badge').textContent=r.txt;
- 
-  // Monthly target
-  document.getElementById('fr-d-mo-pct').textContent=moPct+'%';
-  document.getElementById('fr-d-mo-pct').className='target-pct '+(moPct>=100?'target-over':moPct>=60?'target-warn':'target-low');
-  document.getElementById('fr-d-mo-bar').style.width=moBarW+'%';
-  document.getElementById('fr-d-mo-bar').style.background=moColor;
-  document.getElementById('fr-d-mo-actual').textContent='实际 Rp'+(latest/1e6).toFixed(2)+'M';
- 
-  // Annual target
-  document.getElementById('fr-d-yr-pct').textContent=yrPct+'%';
-  document.getElementById('fr-d-yr-pct').className='target-pct '+(yrPct>=100?'target-over':yrPct>=40?'target-warn':'target-low');
-  document.getElementById('fr-d-yr-bar').style.width=yrBarW+'%';
-  document.getElementById('fr-d-yr-bar').style.background=yrColor;
-  document.getElementById('fr-d-yr-actual').textContent='YTD Rp'+(ytd/1e6).toFixed(2)+'M';
- 
-  // Stats
-  document.getElementById('fr-d-best-m').textContent=best.m+(best.v?'\nRp'+(best.v/1e6).toFixed(1)+'M':'');
-  document.getElementById('fr-d-ytd').textContent='Rp'+(ytd/1e6).toFixed(1)+'M';
- 
-  // Invoice outstanding (from local data or backend)
-  const frInvs=(window._invoices||[]).filter(i=>i.franchisee===name&&i.status!=='paid');
-  const invAmt=frInvs.reduce((s,i)=>s+i.amount,0);
-  const invEl=document.getElementById('fr-d-inv-amt');
-  invEl.textContent=invAmt?'Rp'+(invAmt/1e6).toFixed(1)+'M':'—';
-  invEl.style.color=frInvs.some(i=>i.status==='overdue')?'var(--red)':frInvs.length?'var(--amber)':'var(--green)';
- 
-  // Drill chart
-  mkChart('c-fr-drill',{type:'bar',data:{
-    labels:months.map(m=>m.m),
-    datasets:[
-      {label:'实际销售',data:months.map(m=>m.v),backgroundColor:months.map(m=>{const p=m.v/MONTHLY_TARGET_FR;return p>=1?'rgba(63,185,80,.7)':p>=0.6?'rgba(240,165,0,.7)':'rgba(248,81,73,.6)';}),borderRadius:4},
-      {label:'月目标',data:months.map(()=>MONTHLY_TARGET_FR),backgroundColor:'transparent',borderColor:'rgba(240,165,0,.4)',borderWidth:2,type:'line',pointRadius:0,tension:0}
-    ]
-  },options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#E6EDF3',font:{size:10}}}},scales:{x:{ticks:{color:'#8B949E',font:{size:10}},grid:{display:false}},y:{ticks:{callback:v=>'Rp'+(v/1e6).toFixed(0)+'M',color:'#8B949E'},grid:{color:'rgba(255,255,255,.05)'}}}}}}
-  );
+function confirmAll(){
+  if(!incomingQ.length){alert('队列为空');return;}
+  const cnt=incomingQ.length;
+  incomingQ.forEach(item=>{orders.push({id:item.id,orderno:item.orderno,product:item.product,qty:item.qty,date:item.date,delivery:'',store:item.store,note:item.note,amount:item.amount,status:'pending',source:'sync',ts:Date.now()});});
+  addLog('✓ 批量确认 '+cnt+' 条入库');
+  incomingQ=[];refreshQueueUI();updateKPIs();if(currentPage==='dashboard')renderRecentOrders();
+  showSyncAlert('✅ 已确认 '+cnt+' 条订单，可在「采购申请」中查看');
 }
- 
-function closeFrDetail(){
-  selectedFr=null;
-  document.getElementById('fr-detail').style.display='none';
-  document.querySelectorAll('.fr-chip').forEach(c=>c.classList.remove('sel'));
+function confirmOne(id){
+  const item=incomingQ.find(x=>x.id===id);if(!item)return;
+  orders.push({id:item.id,orderno:item.orderno,product:item.product,qty:item.qty,date:item.date,delivery:'',store:item.store,note:item.note,amount:item.amount,status:'pending',source:'sync',ts:Date.now()});
+  incomingQ=incomingQ.filter(x=>x.id!==id);
+  addLog(`✓ 确认入库: ${item.product} ×${item.qty} (${item.store})`);
+  refreshQueueUI();updateKPIs();if(currentPage==='dashboard')renderRecentOrders();
 }
- 
-// ══════════════════════════════════════════
-// ══════════════════════════════════════════
-function renderMySales(){
-  const f=FRANCHISEES.find(x=>x.name===currentUser)||{nov:0,dec:0,jan:0,feb:0,mar_pred:0};
-    const months=[{m:'NOV-25',v:f.nov},{m:'DEC-25',v:f.dec},{m:'JAN-26',v:f.jan},{m:'FEB-26',v:f.feb}];
-  const ytd=months.reduce((s,m)=>s+(m.v||0),0);
-  const latest=f.feb||f.jan||f.dec||f.nov||0;
-  const best=months.reduce((a,b)=>b.v>a.v?b:a,{m:'—',v:0});
-  const myOrders=orders.filter(o=>o.store===currentUser);
- 
-  const moPct=+(latest/MONTHLY_TARGET_FR*100).toFixed(1);
-  const yrPct=+(ytd/ANNUAL_TARGET_FR*100).toFixed(1);
-  const moBarW=Math.min(moPct,100);
-  const yrBarW=Math.min(yrPct,100);
-  const moColor=moPct>=100?'var(--green)':moPct>=60?'var(--amber)':'var(--red)';
-  const yrColor=yrPct>=100?'var(--green)':yrPct>=40?'var(--blue)':'var(--yellow)';
- 
-  // My invoices outstanding
-  const myInvs=(window._invoices||[]).filter(i=>i.franchisee===currentUser&&i.status!=='paid');
-  const myInvAmt=myInvs.reduce((s,i)=>s+i.amount,0);
- 
-  document.getElementById('my-kpi').innerHTML=`
-      <div class="kpi-card amber">
-      <div class="kpi-lbl">YTD采购总额</div>
-      <div class="kpi-val">Rp${(ytd/1e6).toFixed(1)}M</div>
-      <div class="kpi-sub">NOV-25–FEB-26</div>
-    </div>
-    <div class="kpi-card green">
-      <div class="kpi-lbl">最佳单月</div>
-      <div class="kpi-val">${best.m}</div>
-      <div class="kpi-sub up">Rp${(best.v/1e6).toFixed(1)}M</div>
-    </div>
-    <div class="kpi-card blue">
-      <div class="kpi-lbl">采购申请数</div>
-      <div class="kpi-val">${myOrders.length}</div>
-      <div class="kpi-sub">本店提交</div>
-    </div>
-    <div class="kpi-card purple">
-      <div class="kpi-lbl">Mar-26 AI预测</div>
-      <div class="kpi-val">Rp${(f.mar_pred/1e6).toFixed(1)}M</div>
-      <div class="kpi-sub">基于历史数据</div>
-    </div>`;
- 
-  // Insert target progress after kpi grid
-  const kpiEl=document.getElementById('my-kpi');
-  let tgt=document.getElementById('my-targets-wrap');
-  if(!tgt){tgt=document.createElement('div');tgt.id='my-targets-wrap';kpiEl.parentNode.insertBefore(tgt,kpiEl.nextSibling);}
-  tgt.innerHTML=`
-    <div class="card" style="margin-bottom:16px">
-      <div class="card-hd"><div class="card-title">采购目标达成</div><span class="badge b-amber">本店 · ${currentUser}</span></div>
-      <div class="card-bd">
-        <div class="target-grid">
-          <div>
-            <div style="font-size:11px;color:var(--text2);margin-bottom:8px">本月采购目标 <strong style="color:var(--amber)">Rp 8,500,000</strong></div>
-            <div class="target-wrap">
-              <div class="target-hd"><span class="target-title">最近一月达成率</span><span class="target-pct ${moPct>=100?'target-over':moPct>=60?'target-warn':'target-low'}">${moPct}%</span></div>
-              <div class="target-bar"><div class="target-fill" style="width:${moBarW}%;background:${moColor}"></div></div>
-              <div class="target-sub"><span>实际 Rp${(latest/1e6).toFixed(2)}M</span><span style="color:var(--text3)">目标 Rp 8.5M</span></div>
-            </div>
-          </div>
-          <div>
-            <div style="font-size:11px;color:var(--text2);margin-bottom:8px">年度采购目标 <strong style="color:var(--amber)">Rp 100,000,000</strong></div>
-            <div class="target-wrap">
-              <div class="target-hd"><span class="target-title">年度YTD达成率</span><span class="target-pct ${yrPct>=100?'target-over':yrPct>=40?'target-warn':'target-low'}">${yrPct}%</span></div>
-              <div class="target-bar"><div class="target-fill" style="width:${yrBarW}%;background:${yrColor}"></div></div>
-              <div class="target-sub"><span>YTD Rp${(ytd/1e6).toFixed(2)}M</span><span style="color:var(--text3)">目标 Rp 100M</span></div>
-            </div>
-          </div>
-        </div>
-        ${myInvAmt>0?`<div class="alert alert-warn" style="margin-top:10px;font-size:12px">⚠ 您有 <strong>${myInvs.length}</strong> 笔未付发票，合计 <strong>Rp${(myInvAmt/1e6).toFixed(2)}M</strong>，请及时确认账期 → <span style="text-decoration:underline;cursor:pointer" onclick="nav('invoices')">查看发票</span></div>`:'<div class="alert alert-success" style="margin-top:10px;font-size:12px">✅ 无逾期未付发票</div>'}
+function rejectOne(id){const item=incomingQ.find(x=>x.id===id);incomingQ=incomingQ.filter(x=>x.id!==id);addLog(`✕ 拒绝: ${item?item.product:'—'}`);refreshQueueUI();}
+function clearQueue(){if(incomingQ.length&&!confirm('确认清空全部待确认订单？'))return;incomingQ=[];refreshQueueUI();addLog('队列已清空');}
+function refreshQueueUI(){
+  const el=document.getElementById('incoming-queue');
+  const badge=document.getElementById('queue-badge');
+  const nb=document.getElementById('sync-nav-badge');
+  const cEl=document.getElementById('queue-cnt');
+  badge.textContent=incomingQ.length+'条';
+  if(cEl)cEl.textContent=incomingQ.length+' 条';
+  if(incomingQ.length>0){nb.textContent=incomingQ.length;nb.style.display='inline-flex';}else nb.style.display='none';
+  if(!incomingQ.length){el.innerHTML='<div style="text-align:center;color:var(--text3);padding:40px;font-size:12px"><div style="font-size:24px;margin-bottom:8px">✓</div>队列为空，所有订单已处理</div>';return;}
+  el.innerHTML=[...incomingQ].reverse().map(item=>`
+    <div class="incoming-item flash" id="qi-${item.id}">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+        <div><span style="font-weight:600;font-size:13px">${item.product}</span> <span class="badge b-teal">×${item.qty}</span></div>
+        <span style="font-size:10px;color:var(--text3);font-family:monospace">${item.orderno}</span>
       </div>
-    </div>`;
- 
-  mkChart('c-my-sales',{type:'bar',data:{labels:months.map(m=>m.m),datasets:[
-    {label:'实际采购额',data:months.map(m=>m.v),backgroundColor:months.map(m=>{const p=m.v/MONTHLY_TARGET_FR;return p>=1?'rgba(63,185,80,.7)':p>=0.6?'rgba(240,165,0,.7)':'rgba(248,81,73,.6)';}),borderRadius:5},
-    {label:'月目标',data:months.map(()=>MONTHLY_TARGET_FR),type:'line',borderColor:'rgba(240,165,0,.5)',backgroundColor:'transparent',borderWidth:2,borderDash:[5,5],pointRadius:0}
-  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#E6EDF3',font:{size:11}}}},scales:{y:{ticks:{callback:v=>'Rp'+(v/1e6).toFixed(1)+'M',color:'#8B949E'},grid:{color:'rgba(255,255,255,.05)'}},x:{ticks:{color:'#8B949E'},grid:{display:false}}}}});
-  document.getElementById('my-order-list').innerHTML=myOrders.length?[...myOrders].reverse().map(o=>`
-    <div class="order-item">
-      <div><div style="font-weight:600">${o.product}</div><div class="order-meta">×${o.qty} · ${o.date}</div></div>
-      <span class="badge ${o.status==='pending'?'b-amber':o.status==='approved'?'b-green':'b-red'}">${o.status==='pending'?'待审核':o.status==='approved'?'已批准':'已拒绝'}</span>
-    </div>`).join(''):'<div style="color:var(--text2);text-align:center;padding:30px">暂无记录</div>';
+      <div style="font-size:11px;color:var(--text2);margin-bottom:6px">${item.store} · ${item.date}${item.amount?' · Rp'+parseInt(item.amount).toLocaleString():''}${item.note?' · '+item.note:''}</div>
+      <div style="display:flex;gap:5px">
+        <button class="btn btn-success btn-sm" onclick="confirmOne('${item.id}')">✓ 确认</button>
+        <button class="btn btn-danger btn-sm" onclick="rejectOne('${item.id}')">✕ 拒绝</button>
+      </div>
+    </div>`).join('');
 }
-function renderMyOrders(){
-  document.getElementById('o-store').value=currentUser;
+function setSyncConn(){['sync-dot-top','sync-dot2'].forEach(id=>{const el=document.getElementById(id);if(el){el.className='sync-dot on';el.style.background='var(--green)';}});document.getElementById('sync-status-text').textContent='订单宝已连接';document.getElementById('conn-txt').textContent='已连接';document.getElementById('last-sync').textContent=new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'});}
+function setSyncBlink(){['sync-dot-top','sync-dot2'].forEach(id=>{const el=document.getElementById(id);if(el){el.className='sync-dot blink';el.style.background='var(--teal)';}});document.getElementById('sync-status-text').textContent='同步中...';}
+function setSyncIdle(){['sync-dot-top','sync-dot2'].forEach(id=>{const el=document.getElementById(id);if(el){el.className='sync-dot';el.style.background='var(--text3)';}});document.getElementById('sync-status-text').textContent='订单宝未连接';document.getElementById('conn-txt').textContent='未连接';}
+function updateSyncStatus(){document.getElementById('sync-today').textContent=syncedToday+' 条';document.getElementById('queue-cnt').textContent=incomingQ.length+' 条';}
+function addLog(msg){const t=new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'});syncLog.unshift('['+t+'] '+msg);if(syncLog.length>60)syncLog=syncLog.slice(0,60);renderLog();}
 function renderLog(){const el=document.getElementById('sync-log-el');if(!el)return;el.innerHTML=syncLog.length?syncLog.map(l=>`<div>${l}</div>`).join(''):'<div style="color:var(--text3)">— 等待操作 —</div>';}
 function showSyncAlert(msg){const el=document.getElementById('sync-alert');if(el){el.textContent=msg;el.style.display='block';setTimeout(()=>el.style.display='none',4000);}}
- 
-// ══════════════════════════════════════════
-// BACKEND API LAYER
-// ══════════════════════════════════════════
-const API_BASE = 'http://localhost:3000/api';
-let backendOnline = false;
- 
-async function checkBackend(){
-  try{
-    const r = await fetch(API_BASE+'/health',{signal:AbortSignal.timeout(2500)});
-    if(r.ok){
-      backendOnline = true;
-      updateBePill(true);
-      await loadBackendData();
-    }
-  } catch(e){
-    backendOnline = false;
-    updateBePill(false);
-  }
-}
- 
-function updateBePill(online){
-  const el=document.getElementById('be-status-pill');
-  if(!el)return;
-  if(online){el.className='be-pill be-online';el.textContent='⬤ 后端已连接';}
-  else{el.className='be-pill be-offline';el.textContent='⬤ 本地存储';}
-}
- 
-async function apiCall(method,endpoint,body){
-  if(!backendOnline)return null;
-  try{
-    const opts={method,headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(6000)};
-    if(body)opts.body=JSON.stringify(body);
-    const r=await fetch(API_BASE+endpoint,opts);
-    if(!r.ok)return null;
-    return await r.json();
-  } catch(e){return null;}
-}
- 
-async function loadBackendData(){
-  // Load invoices from backend for use across pages
-  const invs=await apiCall('GET','/invoices');
-  if(invs){
-    window._invoices=invs;
-    updateInvoiceNavBadge();
-  }
-  // Load orders from backend and merge with local
-  const beOrders=await apiCall('GET','/orders');
-  if(beOrders&&beOrders.length){
-    beOrders.forEach(bo=>{if(!orders.find(o=>o.id===bo.id))orders.push(bo);});
-    updateKPIs();
-  }
-}
- 
-function updateInvoiceNavBadge(){
-  const invs=window._invoices||[];
-  const over=invs.filter(i=>i.status==='overdue').length;
-  const badge=document.getElementById('inv-overdue-badge');
-  if(badge){
-    if(over>0){badge.textContent=over;badge.style.display='inline-flex';}
-    else badge.style.display='none';
-  }
-}
- 
-// ══════════════════════════════════════════
-// INVOICES
-// ══════════════════════════════════════════
-// Local mock invoices (fallback when backend offline)
-const MOCK_INVOICES = [
-  {id:'INV-20260301-001',franchisee:'Auto Mekanika',amount:17351100,issueDate:'2026-03-01',dueDate:'2026-03-31',paymentTerms:30,status:'overdue',reminderCount:1,lastReminderDate:'2026-03-28',paidDate:null,notes:'Jan-26采购货款'},
-  {id:'INV-20260315-002',franchisee:'Pit Stop 3',amount:9100000,issueDate:'2026-03-15',dueDate:'2026-04-14',paymentTerms:30,status:'pending',reminderCount:0,lastReminderDate:null,paidDate:null,notes:'Feb-26采购货款'},
-  {id:'INV-20260301-003',franchisee:'CV Sun',amount:68491777,issueDate:'2026-03-01',dueDate:'2026-04-01',paymentTerms:30,status:'overdue',reminderCount:2,lastReminderDate:'2026-03-30',paidDate:null,notes:'Jan-26超大额订单'},
-  {id:'INV-20260201-004',franchisee:'Autones',amount:5215847,issueDate:'2026-02-01',dueDate:'2026-03-03',paymentTerms:30,status:'paid',reminderCount:0,lastReminderDate:null,paidDate:'2026-03-02',notes:'Jan-26采购货款'},
-  {id:'INV-20260315-005',franchisee:'ADS Prima',amount:5339380,issueDate:'2026-03-15',dueDate:'2026-04-14',paymentTerms:30,status:'reminder_sent',reminderCount:1,lastReminderDate:'2026-04-01',paidDate:null,notes:'Feb-26采购货款'},
-  {id:'INV-20260320-006',franchisee:'Bengkel Pegasus',amount:14226024,issueDate:'2026-03-20',dueDate:'2026-04-19',paymentTerms:30,status:'pending',reminderCount:0,lastReminderDate:null,paidDate:null,notes:'Feb-26采购货款'},
-  {id:'INV-20260310-007',franchisee:'Drivewell',amount:8690500,issueDate:'2026-03-10',dueDate:'2026-04-09',paymentTerms:30,status:'pending',reminderCount:0,lastReminderDate:null,paidDate:null,notes:'Feb-26采购货款'},
-  {id:'INV-20260201-008',franchisee:'Bengkel Multi Variasi',amount:6192570,issueDate:'2026-02-01',dueDate:'2026-03-03',paymentTerms:30,status:'paid',reminderCount:0,lastReminderDate:null,paidDate:'2026-03-01',notes:'Jan-26采购货款'},
-  {id:'INV-20260320-009',franchisee:'Honda Auto Duren Sawit',amount:9256982,issueDate:'2026-03-20',dueDate:'2026-04-19',paymentTerms:30,status:'pending',reminderCount:0,lastReminderDate:null,paidDate:null,notes:'Feb-26采购货款'},
-  {id:'INV-20260315-010',franchisee:'Lavender Car Solution',amount:2618850,issueDate:'2026-03-15',dueDate:'2026-04-14',paymentTerms:30,status:'pending',reminderCount:0,lastReminderDate:null,paidDate:null,notes:'Feb-26采购货款'},
-];
-window._invoices = MOCK_INVOICES.map(i=>({...i,daysUntilDue:calcDaysUntilDue(i.dueDate),status:autoStatus(i)}));
- 
-function calcDaysUntilDue(dueDateStr){
-  const today=new Date();today.setHours(0,0,0,0);
-  return Math.ceil((new Date(dueDateStr)-today)/86400000);
-}
-function autoStatus(inv){
-  if(inv.status==='paid')return 'paid';
-  if(calcDaysUntilDue(inv.dueDate)<0)return 'overdue';
-  return inv.status;
-}
- 
-let invFilter='all';
- 
-async function renderInvoices(){
-  const isA=currentRole==='admin';
-  const isF=currentRole==='franchise';
-  document.getElementById('inv-admin-bar').style.display=isA?'flex':'none';
-  document.getElementById('inv-fr-bar').style.display=isF?'block':'none';
- 
-  // Try to get fresh data from backend
-  let invs;
-  if(backendOnline){
-    const q=isF?`?franchisee=${encodeURIComponent(currentUser)}`:'';
-    invs=await apiCall('GET','/invoices'+q);
-    if(invs)window._invoices=invs;
-  }
-  invs=window._invoices||[];
-  if(isF)invs=invs.filter(i=>i.franchisee===currentUser);
- 
-  // Auto-update overdue status client-side
-  invs=invs.map(i=>({...i,daysUntilDue:calcDaysUntilDue(i.dueDate),status:autoStatus(i)}));
-  window._invoices=invs; // update global
- 
-  const filtered=invFilter==='all'?invs:invs.filter(i=>i.status===invFilter);
- 
-  // KPIs
-  const pending=invs.filter(i=>i.status!=='paid'&&i.status!=='overdue').length;
-  const over=invs.filter(i=>i.status==='overdue').length;
-  const due3=invs.filter(i=>i.status!=='paid'&&i.daysUntilDue>=0&&i.daysUntilDue<=3).length;
-  const total=invs.filter(i=>i.status!=='paid').reduce((s,i)=>s+i.amount,0);
- 
-  document.getElementById('inv-k-pending').textContent=pending;
-  document.getElementById('inv-k-overdue').textContent=over;
-  document.getElementById('inv-k-due3').textContent=due3;
-  document.getElementById('inv-k-total').textContent='Rp'+(total/1e6).toFixed(1)+'M';
-  document.getElementById('inv-count-badge').textContent=filtered.length+' 条';
- 
-  // Overdue alert
-  const alertEl=document.getElementById('inv-overdue-alert');
-  if(over>0&&isA){alertEl.style.display='block';alertEl.innerHTML=`🔴 <strong>有 ${over} 笔发票已逾期！</strong> 请立即跟进回款。合计逾期金额：Rp${(invs.filter(i=>i.status==='overdue').reduce((s,i)=>s+i.amount,0)/1e6).toFixed(2)}M`;}
-  else alertEl.style.display='none';
- 
-  updateInvoiceNavBadge();
- 
-  // Table
-  if(!filtered.length){
-    document.getElementById('inv-tbody').innerHTML=`<tr><td colspan="8" style="text-align:center;color:var(--text3);padding:40px">暂无发票记录</td></tr>`;
-    return;
-  }
- 
-  const statusBadge={
-    pending:'<span class="badge b-amber">待付款</span>',
-    overdue:'<span class="badge b-red">⚠ 已逾期</span>',
-    paid:'<span class="badge b-green">✓ 已付款</span>',
-    reminder_sent:'<span class="badge b-blue">已提醒</span>'
-  };
-  const rowClass={pending:'',overdue:'inv-row-overdue',paid:'',reminder_sent:'inv-row-due3'};
- 
-  document.getElementById('inv-tbody').innerHTML=filtered.map(inv=>{
-    const d=inv.daysUntilDue??calcDaysUntilDue(inv.dueDate);
-    const dCls=inv.status==='paid'?'':d<0?'inv-days-over':d<=3?'inv-days-warn':'inv-days-ok';
-    const dTxt=inv.status==='paid'?(inv.paidDate?'已于'+inv.paidDate+'付款':'已付'):d<0?`逾期${Math.abs(d)}天`:d===0?'今日到期':`还剩${d}天`;
-    const actBtns=inv.status==='paid'?'<span style="color:var(--text3);font-size:11px">—</span>':
-      isA?`<div style="display:flex;gap:4px;flex-wrap:wrap">
-        <button class="btn btn-success btn-sm" onclick="markInvPaid('${inv.id}')">✓ 标记已付</button>
-        <button class="btn btn-teal btn-sm" onclick="sendInvReminder('${inv.id}')">📱 发提醒</button>
-        ${inv.status!=='paid'?`<button class="btn btn-danger btn-sm" style="padding:4px 7px" onclick="deleteInv('${inv.id}')">×</button>`:''}
-      </div>`
-      :'<span style="color:var(--text3);font-size:11px">待供应链确认</span>';
- 
-    return `<tr class="${rowClass[inv.status]||''}">
-      <td style="font-family:monospace;font-size:12px;color:var(--teal)">${inv.id}</td>
-      <td style="font-weight:600">${inv.franchisee}</td>
-      <td style="text-align:right;font-weight:700;color:var(--amber)">Rp${inv.amount.toLocaleString()}</td>
-      <td style="font-size:12px;color:var(--text2)">${inv.issueDate}</td>
-      <td style="font-size:12px">${inv.dueDate}</td>
-      <td style="text-align:right"><span class="${dCls}" style="font-size:12px;font-weight:600">${dTxt}</span></td>
-      <td>${statusBadge[inv.status]||'<span class="badge b-gray">'+inv.status+'</span>'}${inv.reminderCount>0&&inv.status!=='paid'?`<span style="font-size:10px;color:var(--text3);margin-left:4px">·提醒×${inv.reminderCount}</span>`:''}</td>
-      <td>${actBtns}</td>
-    </tr>`;
-  }).join('');
-}
- 
-function filterInv(f){
-  invFilter=f;
-  renderInvoices();
-}
- 
-function openInvModal(){
-  document.getElementById('inv-modal').classList.add('open');
-  document.getElementById('inv-m-date').value=new Date().toISOString().split('T')[0];
-  document.getElementById('inv-modal-ok').style.display='none';
-}
-function closeInvModal(){document.getElementById('inv-modal').classList.remove('open');}
- 
-async function submitInvoice(){
-  const store=document.getElementById('inv-m-store').value;
-  const amount=parseInt(document.getElementById('inv-m-amount').value)||0;
-  const date=document.getElementById('inv-m-date').value;
-  const terms=parseInt(document.getElementById('inv-m-terms').value)||30;
-  const notes=document.getElementById('inv-m-notes').value;
-  if(!store||!amount||!date){alert('请填写门店、金额和开票日期');return;}
- 
-  const due=new Date(new Date(date).getTime()+terms*86400000).toISOString().split('T')[0];
-  const inv={
-    id:'INV-'+Date.now().toString(36).toUpperCase(),
-    franchisee:store,amount,issueDate:date,dueDate:due,paymentTerms:terms,
-    status:'pending',reminderCount:0,lastReminderDate:null,paidDate:null,notes,
-    createdAt:new Date().toISOString()
-  };
- 
-  if(backendOnline){
-    const res=await apiCall('POST','/invoices',{franchisee:store,amount,issueDate:date,paymentTerms:terms,notes});
-    if(res){
-      const fresh=await apiCall('GET','/invoices');
-      if(fresh)window._invoices=fresh;
-    } else {
-      window._invoices.push({...inv,daysUntilDue:calcDaysUntilDue(due)});
-    }
-  } else {
-    window._invoices.push({...inv,daysUntilDue:calcDaysUntilDue(due)});
-  }
- 
-  const ok=document.getElementById('inv-modal-ok');
-  ok.textContent=`✅ 发票已创建！到期日：${due}，系统将在到期前3天自动提醒`;
-  ok.style.display='block';
-  ['inv-m-store','inv-m-amount','inv-m-notes'].forEach(id=>document.getElementById(id).value='');
-  setTimeout(()=>{closeInvModal();renderInvoices();updateInvoiceNavBadge();},2000);
-}
- 
-async function markInvPaid(id){
-  if(!confirm('确认将发票 '+id+' 标记为已付款？'))return;
-  if(backendOnline){
-    const res=await apiCall('PUT','/invoices/'+id,{status:'paid',paidDate:new Date().toISOString().split('T')[0]});
-    if(res){const fresh=await apiCall('GET','/invoices');if(fresh)window._invoices=fresh;}
-  } else {
-    const inv=window._invoices.find(i=>i.id===id);
-    if(inv){inv.status='paid';inv.paidDate=new Date().toISOString().split('T')[0];}
-  }
-  renderInvoices();updateInvoiceNavBadge();
-}
- 
-async function sendInvReminder(id){
-  const inv=window._invoices.find(i=>i.id===id);
-  if(!inv)return;
-  const days=calcDaysUntilDue(inv.dueDate);
-  const msg=days<0?`发票已逾期${Math.abs(days)}天，请尽快安排付款！`:days===0?'发票今日到期，请立即安排付款！':`发票将于${days}天后到期，请提前安排付款。`;
-  if(!confirm(`将向 ${inv.franchisee} 发送以下提醒：\n\n📱 ${msg}\n\n确认发送？`))return;
- 
-  if(backendOnline){
-    const res=await apiCall('POST','/invoices/'+id+'/remind',{});
-    if(res&&res.invoice){
-      const idx=window._invoices.findIndex(i=>i.id===id);
-      if(idx>=0)window._invoices[idx]=res.invoice;
-    }
-  } else {
-    const inv2=window._invoices.find(i=>i.id===id);
-    if(inv2){
-      inv2.reminderCount=(inv2.reminderCount||0)+1;
-      inv2.lastReminderDate=new Date().toISOString().split('T')[0];
-      inv2.status=inv2.status==='paid'?'paid':'reminder_sent';
-    }
-  }
-  alert(`✅ 提醒已发送给 ${inv.franchisee}！\n（生产环境将通过WhatsApp/邮件发送）`);
-  renderInvoices();updateInvoiceNavBadge();
-}
- 
-async function deleteInv(id){
-  if(!confirm('确认删除该发票？'))return;
-  if(backendOnline){await apiCall('DELETE','/invoices/'+id);}
-  window._invoices=window._invoices.filter(i=>i.id!==id);
-  renderInvoices();updateInvoiceNavBadge();
-}
- 
+
 // ══════════════════════════════════════════
 // CLOCK
 // ══════════════════════════════════════════
+function startClock(){function tick(){const el=document.getElementById('clock');if(el)el.textContent=new Date().toLocaleString('zh-CN',{timeZone:'Asia/Jakarta',hour12:false}).replace(/\//g,'-');}tick();setInterval(tick,1000);}
+
+// ══════════════════════════════════════════
+// WEBHOOK POLLING ENGINE (订单宝实时连接)
+// ══════════════════════════════════════════
+let whTimer=null;
+let whLastId=null; // track last received order ID to avoid duplicates
+let whConnected=false;
+
+// Load saved config on page load
+function loadWhConfig(){
+  try{
+    const cfg=JSON.parse(localStorage.getItem('xm_wh_cfg')||'{}');
+    if(cfg.url){const el=document.getElementById('wh-url');if(el)el.value=cfg.url;}
+    if(cfg.secret){const el=document.getElementById('wh-secret');if(el)el.value=cfg.secret;}
+    if(cfg.interval){const el=document.getElementById('wh-interval');if(el)el.value=cfg.interval;}
+    if(cfg.autoConfirm){
+      const cb=document.getElementById('wh-autoconfirm');
+      if(cb){cb.checked=true;updateToggleUI(true);}
+    }
+    if(cfg.active&&cfg.url){
+      setTimeout(()=>startWebhookPolling(cfg.url,cfg.interval||10000),1500);
+    }
+  }catch(e){}
+}
+
+function saveWhConfig(){
+  const url=(document.getElementById('wh-url')||{}).value||'';
+  const secret=(document.getElementById('wh-secret')||{}).value||'';
+  const interval=parseInt((document.getElementById('wh-interval')||{}).value||'10000');
+  const autoConfirm=(document.getElementById('wh-autoconfirm')||{}).checked||false;
+  updateToggleUI(autoConfirm);
+  try{localStorage.setItem('xm_wh_cfg',JSON.stringify({url,secret,interval,autoConfirm,active:whConnected}));}catch(e){}
+}
+
+function updateToggleUI(on){
+  const track=document.getElementById('wh-toggle-track');
+  const thumb=document.getElementById('wh-toggle-thumb');
+  if(track)track.style.background=on?'var(--teal)':'var(--border2)';
+  if(thumb)thumb.style.transform=on?'translateX(16px)':'translateX(0)';
+}
+
+function saveAndActivateWebhook(){
+  const url=(document.getElementById('wh-url')||{}).value||'';
+  if(!url||!url.startsWith('http')){alert('请先填入有效的 n8n Webhook 地址（以 https:// 开头）');return;}
+  saveWhConfig();
+  const interval=parseInt((document.getElementById('wh-interval')||{}).value||'10000');
+  startWebhookPolling(url,interval);
+  const ok=document.getElementById('wh-save-ok');
+  if(ok){ok.style.display='block';setTimeout(()=>ok.style.display='none',3000);}
+}
+
+function toggleWebhookConn(){
+  if(whConnected){stopWebhookPolling();}
+  else{
+    const url=(document.getElementById('wh-url')||{}).value||'';
+    if(!url){alert('请先填入 n8n Webhook 地址');return;}
+    const interval=parseInt((document.getElementById('wh-interval')||{}).value||'10000');
+    startWebhookPolling(url,interval);
+  }
+}
+
+function startWebhookPolling(url,interval){
+  if(whTimer)clearInterval(whTimer);
+  whConnected=true;
+  setWhStatus('connecting');
+  addLog('🔗 正在连接 n8n 订单宝...');
+  // First poll immediately
+  pollOrders(url);
+  whTimer=setInterval(()=>pollOrders(url),interval||10000);
+  const btn=document.getElementById('wh-toggle-btn');
+  if(btn){btn.textContent='⏹ 断开连接';}
+  // Save active state
+  try{
+    const cfg=JSON.parse(localStorage.getItem('xm_wh_cfg')||'{}');
+    cfg.active=true;cfg.url=url;
+    localStorage.setItem('xm_wh_cfg',JSON.stringify(cfg));
+  }catch(e){}
+}
+
+function stopWebhookPolling(){
+  if(whTimer){clearInterval(whTimer);whTimer=null;}
+  whConnected=false;
+  setWhStatus('off');
+  addLog('🔌 已断开订单宝连接');
+  const btn=document.getElementById('wh-toggle-btn');
+  if(btn){btn.textContent='▶ 开始连接';}
+  setSyncIdle();
+  try{
+    const cfg=JSON.parse(localStorage.getItem('xm_wh_cfg')||'{}');
+    cfg.active=false;
+    localStorage.setItem('xm_wh_cfg',JSON.stringify(cfg));
+  }catch(e){}
+}
+
+async function pollOrders(url){
+  // Build poll URL: append ?since=lastId or ?poll=true so n8n returns new orders only
+  let pollUrl=url;
+  try{
+    const u=new URL(url);
+    u.searchParams.set('action','poll');
+    if(whLastId)u.searchParams.set('since',whLastId);
+    pollUrl=u.toString();
+  }catch(e){pollUrl=url+(url.includes('?')?'&':'?')+'action=poll'+(whLastId?'&since='+whLastId:'');}
+
+  try{
+    setWhStatus('syncing');
+    const res=await fetch(pollUrl,{
+      method:'GET',
+      headers:{'Content-Type':'application/json','X-Source':'xmotors-dashboard'}
+    });
+    if(!res.ok)throw new Error('HTTP '+res.status);
+    const data=await res.json();
+
+    // data can be: { orders: [...] } or [...] or { order: {...} }
+    let newOrders=[];
+    if(Array.isArray(data))newOrders=data;
+    else if(data.orders&&Array.isArray(data.orders))newOrders=data.orders;
+    else if(data.order)newOrders=[data.order];
+    else if(data.id||data.product)newOrders=[data]; // single order object
+
+    if(newOrders.length>0){
+      setWhStatus('connected');
+      newOrders.forEach(raw=>{
+        // Normalize field names (n8n may use different casing)
+        const item={
+          id:'SYNC-WH-'+Date.now()+'-'+(++idCounter),
+          orderno: raw.orderno||raw.order_no||raw.orderNo||raw.id||('ORD-WH-'+Date.now()),
+          date: raw.date||raw.order_date||new Date().toISOString().split('T')[0],
+          store: raw.store||raw.store_name||raw.storeName||raw.franchise||'未知门店',
+          product: raw.product||raw.product_name||raw.productName||raw.item||'未知产品',
+          qty: parseInt(raw.qty||raw.quantity||1),
+          amount: raw.amount||raw.total||raw.price||'',
+          note: raw.note||raw.notes||raw.remark||'',
+          source: 'webhook',
+          ts: Date.now()
+        };
+        // Avoid duplicate if same orderno already in queue
+        const alreadyIn=incomingQ.some(x=>x.orderno===item.orderno)||orders.some(x=>x.orderno===item.orderno);
+        if(!alreadyIn){
+          incomingQ.push(item);
+          syncedToday++;
+          whLastId=item.orderno;
+          addLog('← WH收到: '+item.store+' · '+item.product+' ×'+item.qty);
+          // Auto-confirm if enabled
+          const autoConfirm=(document.getElementById('wh-autoconfirm')||{}).checked;
+          if(autoConfirm){
+            orders.push({...item,status:'pending'});
+            incomingQ=incomingQ.filter(x=>x.id!==item.id);
+            addLog('✓ 自动确认: '+item.product);
+          }
+        }
+      });
+      refreshQueueUI();updateKPIs();updateSyncStatus();
+      if(currentPage==='dashboard')renderRecentOrders();
+      setSyncConn();
+    }else{
+      setWhStatus('connected');
+      // no new orders, just update last-sync time quietly
+      document.getElementById('last-sync').textContent=new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    }
+  }catch(err){
+    setWhStatus('error');
+    addLog('⚠ 连接失败: '+err.message+' — 将在下次间隔重试');
+  }
+}
+
+async function testWebhookConn(){
+  const url=(document.getElementById('wh-url')||{}).value||'';
+  if(!url){alert('请先填入 Webhook 地址');return;}
+  const res=document.getElementById('wh-test-result');
+  if(!res)return;
+  res.style.display='block';
+  res.style.background='var(--yellow2)';res.style.color='var(--yellow)';res.style.border='1px solid rgba(227,179,65,.2)';
+  res.textContent='⏳ 正在测试连接...';
+  try{
+    const r=await fetch(url+(url.includes('?')?'&':'?')+'action=ping',{method:'GET',signal:AbortSignal.timeout(8000)});
+    if(r.ok){
+      res.style.background='var(--green2)';res.style.color='var(--green)';res.style.border='1px solid rgba(63,185,80,.2)';
+      res.textContent='✅ 连接成功！n8n 已响应，可以开始使用。';
+      addLog('✅ Webhook 测试成功');
+    }else{
+      throw new Error('服务器返回 '+r.status);
+    }
+  }catch(e){
+    res.style.background='var(--red2)';res.style.color='var(--red)';res.style.border='1px solid rgba(248,81,73,.2)';
+    if(e.name==='TimeoutError'||e.name==='AbortError'){
+      res.textContent='⚠ 连接超时（8秒）— 请检查 n8n 地址是否正确，以及 n8n workflow 是否已激活';
+    }else if(e.message.includes('Failed to fetch')||e.message.includes('NetworkError')){
+      res.textContent='⚠ 无法访问该地址 — 可能原因：① n8n 未启动 ② 地址有误 ③ 网络问题。如使用 n8n Cloud 请确保 workflow 已激活。';
+    }else{
+      res.textContent='⚠ '+e.message;
+    }
+    addLog('⚠ Webhook 测试失败: '+e.message);
+  }
+}
+
+function setWhStatus(state){
+  const dot=document.getElementById('wh-dot');
+  const txt=document.getElementById('wh-status-txt');
+  const sub=document.getElementById('wh-status-sub');
+  const interval=(document.getElementById('wh-interval')||{}).value||'10000';
+  const secLabel={'10000':'10秒','30000':'30秒','60000':'1分钟','300000':'5分钟'}[interval]||'10秒';
+  if(!dot||!txt)return;
+  const states={
+    off:{bg:'var(--text3)',t:'未连接 — 请配置 n8n 地址后连接',s:'轮询间隔: 每'+secLabel+'检查一次'},
+    connecting:{bg:'var(--yellow)',t:'连接中...',s:'正在与 n8n 建立连接'},
+    connected:{bg:'var(--green)',t:'✅ 订单宝已连接 — 实时监听新订单',s:'轮询间隔: 每'+secLabel+' · 上次: '+new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'})},
+    syncing:{bg:'var(--teal)',t:'🔄 同步中...',s:'正在拉取新订单'},
+    error:{bg:'var(--red)',t:'⚠ 连接异常 — 将自动重试',s:'检查 n8n 是否正常运行'}
+  };
+  const s=states[state]||states.off;
+  dot.style.background=s.bg;
+  dot.style.boxShadow=state==='connected'?'0 0 6px var(--green)':state==='error'?'0 0 6px var(--red)':'none';
+  txt.textContent=s.t;
+  if(sub)sub.textContent=s.s;
+}
+</script>
+</body>
+</html>
